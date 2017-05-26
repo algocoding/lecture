@@ -18,6 +18,6 @@ Java 라이브러리 예제
 #. Queue
 #. Graph(Bag)
     
-#. `TreeSet <https://github.com/algocoding/lecture/blob/master/etc/src/PQDemo.java>`_
+#. `TreeSet <https://github.com/algocoding/lecture/blob/master/etc/src/TreeSetDemo.java>`_
 #. `Prioirty Queue <https://github.com/algocoding/lecture/blob/master/etc/src/PQDemo.java>`_
 #. `HashMap <https://github.com/algocoding/lecture/blob/master/etc/src/HashMapDemo.java>`_
