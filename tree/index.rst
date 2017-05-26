@@ -4,16 +4,17 @@
 
 예제 코드
 ----------------------------------------
-    #. `비트를 이용한 집합 연산 <./src/SetDemo.java>`_
-    #. 최대값 재귀호출
-    #. 재귀 호출 트리 확인
-    #. 트리 순회하기
-        - 전위/중위/후위 순회하기
-        - BFS
+    #. `비트를 이용한 집합 연산 <https://github.com/algocoding/lecture/blob/master/tree/src/SetDemo.java>`_
+    #. `최대값 재귀호출 <https://github.com/algocoding/lecture/blob/master/tree/src/GetMaxDemo.java>`_
+    #. `재귀 호출 트리 확인 <https://github.com/algocoding/lecture/blob/master/tree/src/RecrusionDemo.java>`_
+    #. `트리 순회하기  <https://github.com/algocoding/lecture/blob/master/tree/src/TreeDemo.java>`_        
+        - 전위/중위/후위 순회하기 
         - 트리의 높이
         - 트리의 크기(노드 수)
-    #. Disjoint-Set
-    #. Segement Tree
+    #. `이진 탐색 트리 <https://github.com/algocoding/lecture/blob/master/tree/src/TreeDemo.java>`_ 
+    #. `힙 <https://github.com/algocoding/lecture/blob/master/tree/src/Heap.java>`_        
+    #. `Disjoint-Set <https://github.com/algocoding/lecture/blob/master/tree/src/DisjointSetDemo.java>`_        
+    #. `Segement Tree <https://github.com/algocoding/lecture/blob/master/tree/src/SegmentTree.java>`_        
 
 
 연습문제
