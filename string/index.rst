@@ -7,8 +7,8 @@
     #. `Brute-force <https://github.com/algocoding/lecture/blob/master/string/src/BruteMatching.java>`_
     #. `KMP <https://github.com/algocoding/lecture/blob/master/string/src/KMP.java>`_
     #. 접미어 배열
-        - :math:`$$ O(N^2) $$`
-        - :math:`$$ O(\log N) $$`
+        - :math:`O(N^2)`
+        - :math:`O(\log N)`
         
     #. 아호-코라식
 
