@@ -1,4 +1,18 @@
-import java.io.FileInputStream;
+/* ют╥б>
+------------------------
+8 10
+1 2 2 
+1 3 2 
+2 4 3 
+2 5 5
+3 6 1
+4 7 4
+5 6 2
+5 7 1
+6 8 6
+7 8 2
+------------------------
+*/
 import java.util.*;
 
 public class ShortestPathBFSMatrix {

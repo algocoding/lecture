@@ -1,3 +1,34 @@
+/* 입력>
+-------------
+2
+10 11
+1 3
+6 7
+6 5
+3 7
+3 2
+7 8
+5 8
+2 9
+2 4
+4 8
+4 10
+
+10 12
+1 2
+1 3
+2 9
+2 4
+3 6
+3 7
+4 8
+4 9
+5 6
+7 2
+8 5
+8 7
+-------------
+*/
 import java.util.Scanner;
 
 public class Cycle {
@@ -29,7 +60,7 @@ public class Cycle {
 		Scanner sc = new Scanner(System.in);
 		int T = sc.nextInt();
 		
-		while(T-- > 0)
+		while(T-- > 0)  // T: 입력 케이스 수
 		{
 			V = sc.nextInt();
 			E = sc.nextInt();
