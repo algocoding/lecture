@@ -1,0 +1,24 @@
+﻿
+
+05. 분할 정복
+========================================
+
+예제 코드
+----------------------------
+
+    #. `병합 정렬 <https://github.com/algocoding/lecture/blob/master/dc/src/MergeSortDemo.java>`_
+    #. `퀵 정렬 <https://github.com/algocoding/lecture/blob/master/dc/src/QuickSortDemo.java>`_
+    #. `Quick Select <https://github.com/algocoding/lecture/blob/master/dc/src/QuickSelectDemo.java>`_
+        - `입력자료 <https://github.com/algocoding/lecture/blob/master/dc/src/quickselect.in>`_
+
+    
+연습문제 
+----------------------------
+
+    #. `숫자 카드 <https://www.acmicpc.net/problem/10815>`_ 
+ 
+    #. `버블 소트 <https://www.acmicpc.net/problem/1517>`_   
+            
+    #. `입국 심사 <https://www.acmicpc.net/problem/3079>`_  
+    
+

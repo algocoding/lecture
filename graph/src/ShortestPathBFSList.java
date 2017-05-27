@@ -1,11 +1,10 @@
-
 import java.util.*;
 
 
-public class ShortestPathBFSList {	
-	static Map<Integer, List<Node>> adjList = new HashMap<Integer, List<Node>>();	// 입접 리스트
-	static int[] D = new int[100];						// 거리 저장
-	static int[] P = new int[100];						// 최단 경로 트리
+public class ShortestPathBFSArrayList {
+	static ArrayList<Node>[] G;
+	static int[] D;
+	static int[] P;
 	
 	static int V, E;
 	private static class Node{
@@ -41,8 +40,7 @@ public class ShortestPathBFSList {
 		{
 			v = Q.remove();
 			
-			List<Node> list = adjList.get(v);
-			for(Node node: list)
+			for(Node node: G[v])
 			{
 				if(D[node.v] > D[v] + node.w)
 				{
@@ -60,28 +58,22 @@ public class ShortestPathBFSList {
 		V = sc.nextInt();
 		E = sc.nextInt();
 		
-		int from, to, weight;
+		G = new ArrayList[V + 1];
+		for(int i = 0; i <= V; i++)
+			G[i] = new ArrayList<Node>();
+		
+		D = new int[V + 1];
+		P = new int[V + 1];
+		
+		int u, v, w;
 		for(int i = 0; i < E; i++)
 		{
-			from = sc.nextInt();
-			to = sc.nextInt();				
-			weight = sc.nextInt();
+			u = sc.nextInt();
+			v = sc.nextInt();				
+			w = sc.nextInt();
 			
-			List<Node> list = adjList.get(from);
-			if(list == null)
-			{
-				list = new LinkedList<Node>();
-				list.add(new Node(to, weight));
-				adjList.put(from, list);
-			}else list.add(new Node(to, weight));
-			
-			list = adjList.get(to);
-			if(list == null)
-			{
-				list = new LinkedList<Node>();
-				list.add(new Node(from, weight));
-				adjList.put(to, list);
-			}else list.add(new Node(from, weight));
+			G[u].add(new Node(v, w));
+			G[v].add(new Node(u, w));
 		}			
 		sc.close();
 		

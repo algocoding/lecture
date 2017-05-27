@@ -10,6 +10,7 @@
    graph/index
    backtrack/index
    dp/index
+   dc/index
    string/index
    etc/index
 

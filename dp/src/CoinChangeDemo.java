@@ -1,4 +1,4 @@
-
+﻿
 public class CoinChangeDemo {
 	static int[] coin = new int[]{1, 4, 5, 10};
 	

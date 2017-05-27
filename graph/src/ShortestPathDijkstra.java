@@ -1,9 +1,9 @@
 import java.util.*;
 
 public class ShortestPathDijkstra {
-	static Map<Integer, List<Vertex>> adjList = new HashMap<Integer, List<Vertex>>();	// 입접 리스트
-	static int[] D = new int[100];						// 거리 저장
-	static int[] P = new int[100];						// 최단 경로 트리
+	static ArrayList<Vertex>[] G;
+	static int[] D;
+	static int[] P;
 	
 	static int V, E;
 
@@ -54,48 +54,39 @@ public class ShortestPathDijkstra {
 			Vertex from = Q.poll();
 			if(from.d > D[from.v]) continue;
 			
-			List<Vertex> list = adjList.get(from.v);
-			
-			for(Vertex to: list)
+			for(Vertex to: G[from.v])
 			{
 				if(D[to.v] > D[from.v] + to.d)
 				{
 					D[to.v] = D[from.v] + to.d;
 					P[to.v] = from.v;
 					Q.add(new Vertex(to.v, D[to.v]));
-					
 				}	
 			}
 		}
 	}
 	public static void main(String[] args) {		
-		Scanner sc = new Scanner(System.in);
+Scanner sc = new Scanner(System.in);
 		
 		V = sc.nextInt();
 		E = sc.nextInt();
 		
-		int from, to, weight;
+		G = new ArrayList[V + 1];
+		for(int i = 0; i <= V; i++)
+			G[i] = new ArrayList<Vertex>();
+		
+		D = new int[V + 1];
+		P = new int[V + 1];
+		
+		int u, v, w;
 		for(int i = 0; i < E; i++)
 		{
-			from = sc.nextInt();
-			to = sc.nextInt();				
-			weight = sc.nextInt();
+			u = sc.nextInt();
+			v = sc.nextInt();				
+			w = sc.nextInt();
 			
-			List<Vertex> list = adjList.get(from);
-			if(list == null)
-			{
-				list = new LinkedList<Vertex>();
-				list.add(new Vertex(to, weight));
-				adjList.put(from, list);
-			}else list.add(new Vertex(to, weight));
-			
-			list = adjList.get(to);
-			if(list == null)
-			{
-				list = new LinkedList<Vertex>();
-				list.add(new Vertex(from, weight));
-				adjList.put(to, list);
-			}else list.add(new Vertex(from, weight));
+			G[u].add(new Vertex(v, w));
+			G[v].add(new Vertex(u, w));
 		}			
 		sc.close();
 		

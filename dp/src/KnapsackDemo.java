@@ -1,4 +1,4 @@
-
+ï»¿
 public class KnapsackDemo {
 	static int W = 10;
 	static int N = 4;
@@ -8,7 +8,7 @@ public class KnapsackDemo {
 	static int[][] memo = new int[N + 1][W + 1];
 	
 
-	// Àç±ÍÀû Á¤ÀÇ ±¸Çö
+	// ìž¬ê·€ì  ì •ì˜ êµ¬í˜„
 	public static int knapsack(int k, int W)
 	{
 		if(k == 0 || W == 0) return 0;
@@ -21,7 +21,7 @@ public class KnapsackDemo {
 		
 		return case1 > case2? case1: case2;
 	}
-	// Àç±Í + ¸Þ¸ð
+	// ìž¬ê·€ + ë©”ëª¨
 	public static int knapsack_memo(int k, int W)
 	{
 		if(memo[k][W] != -1) return memo[k][W];
@@ -37,7 +37,7 @@ public class KnapsackDemo {
 		
 		return memo[k][W] = max;
 	}
-	// ¹Ýº¹
+	// ë°˜ë³µ
 	public static int knapsack_iter(int k, int W)
 	{
 		for(int i = 1; i <= k; i++)
@@ -76,7 +76,7 @@ public class KnapsackDemo {
 	}
 		
 	public static void main(String[] args) {
-		System.out.println("ÃÖ´ë °¡Ä¡ = " + knapsack(N, W));
+		System.out.println("ìµœëŒ€ ê°€ì¹˜ = " + knapsack(N, W));
 		init_memo();
 		knapsack_memo(N, W);
 		print_memo();

@@ -1,4 +1,4 @@
-
+Ôªø
 public class LCSDemo {
 	static String x = new String("BDCABA");
 	static String y = new String("ABCBDAB");
@@ -53,7 +53,7 @@ public class LCSDemo {
 		return memo[m][n];
 	}
 	public static void main(String[] args) {
-		System.out.println("LCS πÆ¡¶....................");
+		System.out.println("LCS Îç∞Î™®....................");
 		System.out.println(LCS(x.length() - 1, y.length() - 1));
 		System.out.println(LCS_memo(x.length() - 1, y.length() - 1));
 		System.out.println(memo[x.length() - 1][y.length() - 1]);
