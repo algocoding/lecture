@@ -35,7 +35,7 @@
     #. `집합의 표현 <https://www.acmicpc.net/problem/1717>`_
         - `JAVA 예제 <https://github.com/algocoding/lecture/blob/master/tree/src/BOJ1717.java>`_ 
     
-	#. `구간합 구하기 <https://www.acmicpc.net/problem/2042>`_
+    #. `구간합 구하기 <https://www.acmicpc.net/problem/2042>`_
         
 
     #. `친구 네트워크 <https://www.acmicpc.net/problem/4195>`_ 
