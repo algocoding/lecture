@@ -4,6 +4,7 @@
 
 예제 코드
 ----------------------------------------
+
     #. `비트를 이용한 집합 연산 <https://github.com/algocoding/lecture/blob/master/tree/src/SetDemo.java>`_
     #. `최대값 재귀호출 <https://github.com/algocoding/lecture/blob/master/tree/src/GetMaxDemo.java>`_
     #. `재귀 호출 트리 확인 <https://github.com/algocoding/lecture/blob/master/tree/src/RecursionDemo.java>`_
@@ -17,20 +18,26 @@
     #. `Segement Tree <https://github.com/algocoding/lecture/blob/master/tree/src/SegmentTree.java>`_        
 
 
-연습문제
+연습 문제
 ----------------------------------------
+
 **문제와 샘플 코드에 대한 링크:**
 
     #. `트리 순회 <https://www.acmicpc.net/problem/1991>`_ 
+        - `JAVA 예제 <https://github.com/algocoding/lecture/blob/master/tree/src/BOJ1991.java>`_ 
     #. `트리의 높이와 너비 <https://www.acmicpc.net/problem/2250>`_
         - **주의** :루트가 1번 노드가 아닐 수 있다.
+        - `JAVA 예제 <https://github.com/algocoding/lecture/blob/master/tree/src/BOJ2250.java>`_  
     #. `최소 공통 조상(LCA, Lowest Common Ancestor) <https://www.acmicpc.net/problem/11437>`_ 
+        
     #. `집합의 표현 <https://www.acmicpc.net/problem/1717>`_
+        - `JAVA 예제 <https://github.com/algocoding/lecture/blob/master/tree/src/BOJ1717.java>`_ 
     #. `구간합 구하기 <https://www.acmicpc.net/problem/2042>`_
+        
+
     #. `친구 네트워크 <https://www.acmicpc.net/problem/4195>`_ 
-
-
- 
+        
+        
 ..
     .. disqus::
         :disqus_identifier: master_page

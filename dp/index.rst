@@ -22,12 +22,17 @@
 ----------------------------
 
     #. `동전2 <https://www.acmicpc.net/problem/2294>`_                  
+       
         
     #. `LCS <https://www.acmicpc.net/problem/9251>`_                   
+       
     
     #. `공통 부분 문자열 <https://www.acmicpc.net/problem/5582>`_      
+       
     
-    #. `키순서> <https://www.acmicpc.net/problem/2458>`_ 
+    
+    #. `키순서 <https://www.acmicpc.net/problem/2458>`_ 
+        
         
 
 ..    #. `외판원 순회 <https://www.acmicpc.net/problem/2098>`_         

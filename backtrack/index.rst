@@ -19,13 +19,18 @@
 
     #. `일곱 난쟁이 <https://www.acmicpc.net/problem/2309>`_    
         
+        
     #. `로또 <https://www.acmicpc.net/problem/6603>`_           
+       
     
     #. `n-Queen <https://www.acmicpc.net/problem/9663>`_        
+       
     
     #. `외판원 순회2 `문제 풀기 <https://www.acmicpc.net/problem/10971>`_    
+       
     
     #. `나이트의 이동 문제 풀기 <https://www.acmicpc.net/problem/7562>`_  
+        
 
 ..
     .. disqus::
