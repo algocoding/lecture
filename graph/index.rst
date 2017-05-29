@@ -27,9 +27,7 @@
 ----------------------------
 
     #. `DFS와 BFS <https://www.acmicpc.net/problem/1260>`_ 
-       
-
-	#. `미로 탐색  <https://www.acmicpc.net/problem/2178>`_ 
+    #. `미로 탐색  <https://www.acmicpc.net/problem/2178>`_ 
        
     
     #. `최단 경로  <https://www.acmicpc.net/problem/1753>`_ 
