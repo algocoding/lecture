@@ -26,7 +26,8 @@
     #. `n-Queen <https://www.acmicpc.net/problem/9663>`_        
         - 순열
     
-    #. `1,2,3 더하기 <https://www.acmicpc.net/problem/9095>`_ 
+    #. `알파벳 <https://www.acmicpc.net/problem/1987>`_ 
+        - DFS
         
     #. `나이트의 이동 <https://www.acmicpc.net/problem/7562>`_  
         - BFS
