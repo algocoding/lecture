@@ -18,20 +18,22 @@
 ----------------------------
 
     #. `일곱 난쟁이 <https://www.acmicpc.net/problem/2309>`_    
-        
+        - 부분 집합
         
     #. `로또 <https://www.acmicpc.net/problem/6603>`_           
-       
-    
-    #. `n-Queen <https://www.acmicpc.net/problem/9663>`_        
-       
-    
-    #. `외판원 순회2 `문제 풀기 <https://www.acmicpc.net/problem/10971>`_    
-       
-    
-    #. `나이트의 이동 문제 풀기 <https://www.acmicpc.net/problem/7562>`_  
+        - 조합
         
-
+    #. `n-Queen <https://www.acmicpc.net/problem/9663>`_        
+        - 순열
+    
+    #. `1,2,3 더하기 <https://www.acmicpc.net/problem/9095>`_ 
+        
+    #. `나이트의 이동 <https://www.acmicpc.net/problem/7562>`_  
+        - BFS
+        
+    #. `외판원 순회2 <https://www.acmicpc.net/problem/10971>`_    
+        - 순열
+    
 ..
     .. disqus::
         :disqus_identifier: master_page
