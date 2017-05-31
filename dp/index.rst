@@ -33,8 +33,8 @@
     
     #. `키순서 <https://www.acmicpc.net/problem/2458>`_ 
         - 플로이드-워샬
-        
 
-..    #. `외판원 순회 <https://www.acmicpc.net/problem/2098>`_         
+    #. `외판원 순회 <https://www.acmicpc.net/problem/2098>`_         
+        - 비트 마스크를 활용한 메모이제이션
         - `JAVA 예제 <https://github.com/algocoding/lecture/blob/master/dp/src/BOJ2098.java>`_ 
     
