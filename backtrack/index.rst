@@ -23,7 +23,7 @@
         
     #. `로또 <https://www.acmicpc.net/problem/6603>`_ 
         - 조합
-        - `JAVA 예제 <https://github.com/algocoding/lecture/blob/master/backtrack/src/BOJ6603.java>`_ 
+        - `중첩 반복문 <https://github.com/algocoding/lecture/blob/master/backtrack/src/BOJ6603.java>`_ / `재귀호출 <https://github.com/algocoding/lecture/blob/master/backtrack/src/BOJ6603_recur.java>`_
     
     #. `n-Queen <https://www.acmicpc.net/problem/9663>`_        
         - 순열 + 가지치기
