@@ -1,5 +1,5 @@
-
-// ÁÙ¼¼¿ì±â https://www.acmicpc.net/problem/2252
+ï»¿
+// ì¤„ì„¸ìš°ê¸° https://www.acmicpc.net/problem/2252
 import java.util.*;
 
 public class lineSort {
@@ -24,8 +24,8 @@ public class lineSort {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		N = sc.nextInt(); // ÇĞ»ı¼ö(Á¤Á¡¼ö)
-		M = sc.nextInt(); // ºñ±³È½¼ö(°£¼±¼ö)
+		N = sc.nextInt(); // í•™ìƒìˆ˜(ì •ì ìˆ˜)
+		M = sc.nextInt(); // ë¹„êµíšŸìˆ˜(ê°„ì„ ìˆ˜)
 		
 		G = new ArrayList[N + 1];
 		for(int i = 0; i <= N; i++)

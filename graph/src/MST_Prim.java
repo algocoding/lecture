@@ -1,4 +1,4 @@
-
+ï»¿
 import java.util.*;
 
 public class MST_Prim {
@@ -8,7 +8,7 @@ public class MST_Prim {
 	static boolean[] visited = new boolean[100];
 	static int V, E, T;
 	
-	// ¿ì¼± ¼øÀ§ Å¥¿¡ ÀúÀåµÇ´Â Á¤º¸
+	// ìš°ì„  ìˆœìœ„ íì— ì €ì¥ë˜ëŠ” ì •ë³´
 	private static class Vertex implements Comparable<Vertex>{
 		int id;
 		int key;

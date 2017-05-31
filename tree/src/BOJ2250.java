@@ -1,5 +1,5 @@
-// Ʈ���� ���̿� �ʺ� https://www.acmicpc.net/problem/2250
-// ��Ʈ�� �׻� 1�� �ƴϴ�.
+﻿// 트리의 높이와 너비 https://www.acmicpc.net/problem/2250
+// 루트가 항상 1이 아니다.
 
 import java.util.*;
 

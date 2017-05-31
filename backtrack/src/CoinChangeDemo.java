@@ -1,4 +1,4 @@
-
+ï»¿
 public class CoinChangeDemo {
 	static int[] coin = new int[]{1, 4, 6};
 	static int[] coin_set = new int[100];
@@ -11,7 +11,7 @@ public class CoinChangeDemo {
 		if(money == 0)
 		{
 			min = k;
-			System.out.printf("µ¿Àü¼ö = %d> ", k);
+			System.out.printf("ë™ì „ìˆ˜ = %d> ", k);
 			for(int i = 0; i < k; i++)
 				System.out.print(coin_set[i] + " ");
 			System.out.println();

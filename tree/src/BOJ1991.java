@@ -1,4 +1,4 @@
-import java.util.*;
+﻿import java.util.*;
 
 public class Main {
 	static int[] p, l, r;	

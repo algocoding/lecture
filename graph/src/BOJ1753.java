@@ -1,5 +1,5 @@
-
-// ÃÖ´Ü °æ·Î  https://www.acmicpc.net/problem/1753
+ï»¿
+// ìµœë‹¨ ê²½ë¡œ  https://www.acmicpc.net/problem/1753
 import java.util.*;
 
 public class ShortestPath {
@@ -9,10 +9,10 @@ public class ShortestPath {
 	static int[] P;
 	static int N, M, S;
 
-	// ¿ì¼± ¼øÀ§ Å¥¿¡ ÀúÀåµÇ´Â Á¤º¸
+	// ìš°ì„  ìˆœìœ„ íì— ì €ì¥ë˜ëŠ” ì •ë³´
 	private static class Vertex implements Comparable<Vertex> {
-		int v; // Á¤Á¡
-		int d; // °¡ÁßÄ¡ ¶Ç´Â °Å¸®
+		int v; // ì •ì 
+		int d; // ê°€ì¤‘ì¹˜ ë˜ëŠ” ê±°ë¦¬
 
 		Vertex(int a, int b) {
 			v = a; d = b;
@@ -25,7 +25,7 @@ public class ShortestPath {
 		}
 	}
 
-	// ´ÙÀÍ½ºÆ®¶ó + ¿ì¼±¼øÀ§ Å¥
+	// ë‹¤ìµìŠ¤íŠ¸ë¼ + ìš°ì„ ìˆœìœ„ í
 	public static void dijkstra(int v) {
 		for (int i = 1; i <= N; i++) {
 			D[i] = INF;

@@ -1,4 +1,4 @@
-/* ÀÔ·Â>
+ï»¿/* ì…ë ¥>
 ------------------------
 8 10
 1 2 2 
@@ -23,7 +23,7 @@ public class ShortestPathDijkstra {
 	static int V, E;
 
 	
-	// D[], P[] ¹è¿­ Ãâ·Â ÇÏ±â
+	// D[], P[] ë°°ì—´ ì¶œë ¥ í•˜ê¸°
 	public static void printResult()
 	{
 		for(int i = 1; i <= V; i++)
@@ -38,10 +38,10 @@ public class ShortestPathDijkstra {
 		System.out.printf("\n");
 	}
 	
-	// ¿ì¼± ¼øÀ§ Å¥¿¡ ÀúÀåµÇ´Â Á¤º¸
+	// ìš°ì„  ìˆœìœ„ íì— ì €ì¥ë˜ëŠ” ì •ë³´
 	private static class Vertex implements Comparable<Vertex>{
-		int v;	// Á¤Á¡
-		int d;	// °¡ÁßÄ¡ ¶Ç´Â °Å¸®
+		int v;	// ì •ì 
+		int d;	// ê°€ì¤‘ì¹˜ ë˜ëŠ” ê±°ë¦¬
 		Vertex(int a, int b)
 		{
 			v = a; d = b; 
@@ -54,7 +54,7 @@ public class ShortestPathDijkstra {
 			return d - arg.d;
 		}
 	}
-	// ´ÙÀÍ½ºÆ®¶ó + ¿ì¼±¼øÀ§ Å¥
+	// ë‹¤ìµìŠ¤íŠ¸ë¼ + ìš°ì„ ìˆœìœ„ í
 	public static void dijkstra(int v)
 	{
 		for(int i = 1; i <= V; i++)
@@ -105,7 +105,7 @@ Scanner sc = new Scanner(System.in);
 		}			
 		sc.close();
 		
-		System.out.println("ÃÖ´Ü °æ·Î / ´ÙÀÍ½ºÆ®¶ó");
+		System.out.println("ìµœë‹¨ ê²½ë¡œ / ë‹¤ìµìŠ¤íŠ¸ë¼");
 		System.out.println("----------------");
 		dijkstra(1); printResult();
 		System.out.println("----------------");

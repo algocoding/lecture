@@ -1,4 +1,4 @@
-
+ï»¿
 
 
 public class KnapsackDemo {
@@ -13,12 +13,12 @@ public class KnapsackDemo {
 		for(int i = 0; i < N; i++)
 		{
 			if(bits[i])
-				System.out.print("¹°°Ç" + i + ", ");
-				//System.out.print("[¹°°Ç" + i + "(" + w[i] + "," + v[i] + ")] ");
+				System.out.print("ë¬¼ê±´" + i + ", ");
+				//System.out.print("[ë¬¼ê±´" + i + "(" + w[i] + "," + v[i] + ")] ");
 		}
 		System.out.println();
 	}
-	// ¹İÈ¯ °ª ¾øÀ½.
+	// ë°˜í™˜ ê°’ ì—†ìŒ.
 	public static void knapsack(int k, int weight, int value)
 	{
 		if( weight > W) return;
@@ -35,7 +35,7 @@ public class KnapsackDemo {
 		bits[k] = false; knapsack(k + 1,  weight, value);
 	}
 	
-	// ¹İÈ¯ °ªÀ» °¡Áö´Â ÇüÅÂ·Î ±¸Çö
+	// ë°˜í™˜ ê°’ì„ ê°€ì§€ëŠ” í˜•íƒœë¡œ êµ¬í˜„
 	public static int knapsack(int k, int weight)
 	{
 		if(k == N || weight == 0) return 0;
@@ -50,9 +50,9 @@ public class KnapsackDemo {
 	}
 	public static void main(String[] args) {
 		knapsack(0, 0, 0);
-		System.out.println("ÃÖ´ë °¡Ä¡ = " + max);
+		System.out.println("ìµœëŒ€ ê°€ì¹˜ = " + max);
 		
-		System.out.println("ÃÖ´ë °¡Ä¡ = " + knapsack(0, W));
+		System.out.println("ìµœëŒ€ ê°€ì¹˜ = " + knapsack(0, W));
 	}
 
 }

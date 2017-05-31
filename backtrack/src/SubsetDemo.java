@@ -1,4 +1,4 @@
-
+ï»¿
 public class SubsetDemo {
 	static char[] str = new char[]{'A', 'B', 'C', 'D'};
 	static boolean[] bits = new boolean[str.length];	
@@ -19,7 +19,7 @@ public class SubsetDemo {
 		bits[k] = false; subset(k + 1, n);
 		
 	}
-	// binary counting À¸·Î »ı¼ºÇÏ±â
+	// binary counting ìœ¼ë¡œ ìƒì„±í•˜ê¸°
 	public static void subset_counting(int N)
 	{
 		for(int i = 0; i < (1 << N); i++)
@@ -39,7 +39,7 @@ public class SubsetDemo {
 			System.out.println();
 		}
 	}
-	// ¹İº¹ ±¸Á¶
+	// ë°˜ë³µ êµ¬ì¡°
 	public static void subset_iter()
 	{
 		int[] bits = new int[3];

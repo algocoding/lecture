@@ -29,7 +29,7 @@
     #. `DFS와 BFS <https://www.acmicpc.net/problem/1260>`_ 
         - `JAVA 예제 <https://github.com/algocoding/lecture/blob/master/graph/src/BOJ1260.java>`_ 
 
-    #. `미로 탐색  <https://www.acmicpc.net/problem/2178>`_
+    #. `미로 탐색  <https://www.acmicpc.net/problem/2178>`_ 
         - BFS(최단 경로)
         - `JAVA 예제 <https://github.com/algocoding/lecture/blob/master/graph/src/BOJ2178.java>`_ 
     

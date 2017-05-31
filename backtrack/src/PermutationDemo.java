@@ -1,4 +1,4 @@
-
+ï»¿
 public class PermutationDemo {
 	static char[] str;
 	static char[] order;	
@@ -25,7 +25,7 @@ public class PermutationDemo {
 			}	
 		}
 	}
-	// ±³È¯À» ÅëÇÑ »ı¼º, n°³¿¡¼­ r°³¸¦ »Ì¾Æ¼­ ³ª¿­ÇÏ±â
+	// êµí™˜ì„ í†µí•œ ìƒì„±, nê°œì—ì„œ rê°œë¥¼ ë½‘ì•„ì„œ ë‚˜ì—´í•˜ê¸°
 	public static void perm_swap(int k, int n, int r)
 	{
 		if(k == r)
@@ -44,7 +44,7 @@ public class PermutationDemo {
 		}
 	}
 	
-	// bit Á¤º¸¸¦ ÀÌ¿ëÇØ¼­ »ı¼ºÇÏ±â
+	// bit ì •ë³´ë¥¼ ì´ìš©í•´ì„œ ìƒì„±í•˜ê¸°
 	public static void perm(int k, int n, int r, int visit)
 	{
 		if(k == r)
@@ -63,7 +63,7 @@ public class PermutationDemo {
 			
 		}
 	}
-	// Áßº¹ ¼ø¿­
+	// ì¤‘ë³µ ìˆœì—´
 	public static void perm_re(int k, int n, int r)
 	{
 		if(k == r)

@@ -1,4 +1,4 @@
-import java.util.*;
+﻿import java.util.*;
 
 public class nQueenDemo {
 	static int[] COL;
@@ -27,7 +27,7 @@ public class nQueenDemo {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("N-Queen �Է�> ");
+		System.out.println("N-Queen 입력> ");
 		Scanner sc = new Scanner(System.in);
 		N = sc.nextInt();
 		COL = new int[N];

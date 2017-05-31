@@ -1,10 +1,10 @@
-
+ï»¿
 public class CombinationDemo {
-	static char[] str;		// n°³ÀÇ ¿ä¼Ò ÀúÀå
-	static char[] picked;	// ¼±ÅÃµÈ r°³ÀÇ ¿ä¼Òµé ÀúÀå
+	static char[] str;		// nê°œì˜ ìš”ì†Œ ì €ì¥
+	static char[] picked;	// ì„ íƒëœ rê°œì˜ ìš”ì†Œë“¤ ì €ì¥
 	static int cnt = 0;
 	
-	// n°³¿¡¼­ r°³¸¦ ¼±ÅÃÇÏ±â, k: ¼±ÅÃµÈ ¿ä¼Ò¼ö, 
+	// nê°œì—ì„œ rê°œë¥¼ ì„ íƒí•˜ê¸°, k: ì„ íƒëœ ìš”ì†Œìˆ˜, 
 	public static void comb(int k, int n, int r, int start)
 	{
 		if(k == r)
@@ -22,7 +22,7 @@ public class CombinationDemo {
 		
 		}
 	}
-	// Á¶ÇÕÀÇ Àç±ÍÀû Á¤ÀÇ¸¦ ÀÌ¿ëÇÑ »ı¼º
+	// ì¡°í•©ì˜ ì¬ê·€ì  ì •ì˜ë¥¼ ì´ìš©í•œ ìƒì„±
 	public static void comb_recur(int n, int r)
 	{
 		if(r == 0)
@@ -38,7 +38,7 @@ public class CombinationDemo {
 		comb_recur(n - 1, r - 1);
 		comb_recur(n - 1, r);
 	}
-	// Áßº¹ Á¶ÇÕ »ı¼º
+	// ì¤‘ë³µ ì¡°í•© ìƒì„±
 	public static void comb_re(int k, int n, int r, int start)
 	{
 		if(k == r)

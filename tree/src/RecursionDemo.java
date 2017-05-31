@@ -1,4 +1,4 @@
-
+ï»¿
 public class RecursionDemo {
 	static int cnt = 0;
 	static int[] arr = new int[]{25, 6, 73, 62, 90, 24, 15, 38, 50, 54};
@@ -31,7 +31,7 @@ public class RecursionDemo {
 	{
 		printHello(0, 3);
 		
-		System.out.println("¹ÝÈ¯°ª = " + recurFunc(0, 3));
+		System.out.println("ë°˜í™˜ê°’ = " + recurFunc(0, 3));
 		
 	}
 }
