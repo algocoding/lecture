@@ -17,7 +17,7 @@
 연습문제 
 ----------------------------
 
-     #. `일곱 난쟁이 <https://www.acmicpc.net/problem/2309>`_    
+    #. `일곱 난쟁이 <https://www.acmicpc.net/problem/2309>`_    
         - 부분 집합
         - `JAVA 예제 <https://github.com/algocoding/lecture/blob/master/backtrack/src/BOJ2309.java>`_ 
         
