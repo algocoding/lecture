@@ -40,7 +40,7 @@
     
     
     #. `키순서 <https://www.acmicpc.net/problem/2458>`_ 
-        - `플로이드-워샬 <https://github.com/algocoding/lecture/blob/master/dp/src/BOJ2458_floyd.java>`_  / `순뱡향/역방향 DFS 탐색 <https://github.com/algocoding/lecture/blob/master/dp/src/BOJ2458_dfs.java>`_  / 
+        - `플로이드-워샬 <https://github.com/algocoding/lecture/blob/master/dp/src/BOJ2458_floyd.java>`_  / `순뱡향/역방향 DFS 탐색 <https://github.com/algocoding/lecture/blob/master/dp/src/BOJ2458_dfs.java>`_ 
 
     #. `외판원 순회 <https://www.acmicpc.net/problem/2098>`_         
         - 비트 마스크를 활용한 메모이제이션
