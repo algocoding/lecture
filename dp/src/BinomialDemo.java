@@ -1,4 +1,4 @@
-import java.util.*;
+ï»¿import java.util.*;
 
 public class BinomialDemo {
 
@@ -36,7 +36,7 @@ public class BinomialDemo {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("n °ú r ÀÔ·Â> ");
+		System.out.println("n ê³¼ r ìž…ë ¥> ");
 		
 		n = sc.nextInt();
 		r = sc.nextInt();
