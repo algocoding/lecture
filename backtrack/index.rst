@@ -10,7 +10,7 @@
         - 교환을 통한 순열 생성 / 비트 마스크를 이용한 생성
     #. `조합 생성 <https://github.com/algocoding/lecture/blob/master/backtrack/src/CombinationDemo.java>`_
         - 재귀적 정의
-    #. `동전 거스름돈 <https://github.com/algocoding/lecture/blob/master/backtrack/src/CoinchangeDemo.java>`_
+    #. `동전 거스름돈 <https://github.com/algocoding/lecture/blob/master/backtrack/src/CoinChangeDemo.java>`_
     #. `배낭 문제 <https://github.com/algocoding/lecture/blob/master/backtrack/src/KnapsackDemo.java>`_
 
     
