@@ -16,11 +16,13 @@
 ----------------------------
 
     #. `숫자 카드 <https://www.acmicpc.net/problem/10815>`_ 
-       
+        - 이분 탐색
 
     #. `버블 소트 <https://www.acmicpc.net/problem/1517>`_   
-       
+        - counting inversion
         
     #. `입국 심사 <https://www.acmicpc.net/problem/3079>`_  
+        - 최적화 문제 -> 결정 문제 + 이분 탐색
+
        
 
