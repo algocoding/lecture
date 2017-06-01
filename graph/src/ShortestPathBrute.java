@@ -1,4 +1,4 @@
-ï»¿/* ì…ë ¥>
+/* ÀÔ·Â>
 ------------------------
 8 10
 1 2 2 
@@ -16,13 +16,13 @@
 import java.util.*;
 
 public class ShortestPathBrute {
-	static int[][] G = new int[100][100];				// ì¸ì ‘ í–‰ë ¬
-	static int[] D = new int[100];						// ê±°ë¦¬ ì €ì¥
-	static int[] P = new int[100];						// ìµœë‹¨ ê²½ë¡œ íŠ¸ë¦¬
+	static int[][] G = new int[100][100];				// ÀÎÁ¢ Çà·Ä
+	static int[] D = new int[100];						// °Å¸® ÀúÀå
+	static int[] P = new int[100];						// ÃÖ´Ü °æ·Î Æ®¸®
 	
 	static int V, E;
 		
-	// D[], P[] ë°°ì—´ ì¶œë ¥ í•˜ê¸°
+	// D[], P[] ¹è¿­ Ãâ·Â ÇÏ±â
 	public static void printResult()
 	{
 		for(int i = 1; i <= V; i++)
@@ -37,7 +37,7 @@ public class ShortestPathBrute {
 		System.out.printf("\n");
 	}
 	
-	// BFS + ì¸ì ‘ í–‰ë ¬
+	// BFS + ÀÎÁ¢ Çà·Ä
 	public static void BruteForce(int s)
 	{
 		for(int i = 1; i <= V; i++)
@@ -78,7 +78,7 @@ public class ShortestPathBrute {
 			G[from][to] = G[to][from] = weight;
 		}		
 				
-		System.out.println("ìµœë‹¨ ê²½ë¡œ / BruteForce");
+		System.out.println("ÃÖ´Ü °æ·Î / BruteForce");
 		System.out.println("----------------");
 		BruteForce(1); printResult();
 		System.out.println("----------------");

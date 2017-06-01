@@ -1,12 +1,13 @@
+// MST Prim 알고리즘 
+// 네트워크 연결 https://www.acmicpc.net/problem/1922
 
 import java.util.*;
-
-public class MST_Prim {
-	static int[][] G = new int[100][100];	
-	static int[] D = new int[100];						
-	static int[] P = new int[100];
-	static boolean[] visited = new boolean[100];
-	static int V, E, T;
+public class Main {
+	static int[][] G = new int[1001][1001];	
+	static int[] D = new int[1001];						
+	static int[] P = new int[1001];
+	static boolean[] visited = new boolean[1001];
+	static int N, M;
 	
 	// 우선 순위 큐에 저장되는 정보
 	private static class Vertex implements Comparable<Vertex>{
@@ -24,7 +25,7 @@ public class MST_Prim {
 	}
 	public static int mst_prim(int s)
 	{
-		for(int i = 1; i <= V; i++)
+		for(int i = 1; i <= N; i++)
 		{
 			D[i] = 0xfffff;
 			P[i] = i;
@@ -38,12 +39,13 @@ public class MST_Prim {
 		while(!Q.isEmpty())
 		{
 			Vertex v = Q.poll();
+			
 			if(visited[v.id]) continue;
 			
 			ret += v.key;
 			visited[v.id] = true;
 			
-			for(int i = 1; i <= V; i++)
+			for(int i = 1; i <= N; i++)
 			{
 				if(G[v.id][i] != 0 && visited[i] == false && G[v.id][i] < D[i])
 				{
@@ -53,28 +55,17 @@ public class MST_Prim {
 				}
 			}
 		}
+		
 		return ret;
-	}
-	public static void printResult()
-	{
-		for(int i = 1; i <= V; i++)
-			System.out.printf("%2d ", i);
-		System.out.printf("\n-------------------------------\n");
-		for(int i = 1; i <= V; i++)
-			System.out.printf("%2d ", P[i]);
-		System.out.println();
-		for(int i = 1; i <= V; i++)
-			System.out.printf("%2d ", D[i]);		
-		 
 	}
 	public static void main(String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
-		V = sc.nextInt();
-		E = sc.nextInt();
+		N = sc.nextInt();
+		M = sc.nextInt();
 		
 		int from, to, weight;
-		for(int i = 0; i < E; i++)
+		for(int i = 0; i < M; i++)
 		{
 			from = sc.nextInt();
 			to = sc.nextInt();
@@ -82,8 +73,8 @@ public class MST_Prim {
 			G[from][to] = G[to][from] = weight;
 		}
 			
-		mst_prim(1);
-		printResult();
+		System.out.println(mst_prim(1));
+		
 		sc.close();		
 	}
 }

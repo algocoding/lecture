@@ -1,4 +1,4 @@
-ï»¿/* ìž…ë ¥>
+/* ÀÔ·Â>
 ------------------------
 8 10
 1 2 2 
@@ -26,7 +26,7 @@ public class ShortestPathBFSArrayList {
 		Node(int a, int b){ v= a; w = b;}
 	}
 	
-	// D[], P[] ë°°ì—´ ì¶œë ¥ í•˜ê¸°
+	// D[], P[] ¹è¿­ Ãâ·Â ÇÏ±â
 	public static void printResult()
 	{
 		for(int i = 1; i <= V; i++)
@@ -41,7 +41,7 @@ public class ShortestPathBFSArrayList {
 		System.out.printf("\n");
 	}
 	
-	// BFS + ì¸ì ‘ ë¦¬ìŠ¤íŠ¸
+	// BFS + ÀÎÁ¢ ¸®½ºÆ®
 	public static void BFS(int v)
 	{
 		for(int i = 1; i <= V; i++)
@@ -91,7 +91,7 @@ public class ShortestPathBFSArrayList {
 		}			
 		sc.close();
 		
-		System.out.println("ìµœë‹¨ ê²½ë¡œ / BFS - ì¸ì ‘ë¦¬ìŠ¤íŠ¸");
+		System.out.println("ÃÖ´Ü °æ·Î / BFS - ÀÎÁ¢¸®½ºÆ®");
 		System.out.println("----------------");
 		BFS(1); printResult();
 		System.out.println("----------------");

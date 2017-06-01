@@ -1,4 +1,4 @@
-ï»¿// DFS-BFS https://www.acmicpc.net/problem/1260
+// DFS-BFS https://www.acmicpc.net/problem/1260
 import java.util.*;
 
 public class Main {
@@ -45,9 +45,9 @@ public class Main {
 	{
 		Scanner sc = new Scanner(System.in);
 		
-		N = sc.nextInt();	// ì •ì ìˆ˜
-		M = sc.nextInt();	// ê°„ì„ ìˆ˜
-		s = sc.nextInt(); // ì‹œì‘ ì •ì 
+		N = sc.nextInt();	// Á¤Á¡¼ö
+		M = sc.nextInt();	// °£¼±¼ö
+		s = sc.nextInt(); // ½ÃÀÛ Á¤Á¡
 		
 		int u, v;
 		for(int i = 0; i < M; i++)

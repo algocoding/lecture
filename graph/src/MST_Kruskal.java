@@ -1,4 +1,4 @@
-ï»¿/* ì…ë ¥>
+/* ÀÔ·Â>
 -------------
 9 14
 1 2 4
@@ -20,8 +20,8 @@
 import java.util.*;
 
 public class MST_Kruskal {
-	static int[] p = null;		// ë¶€ëª¨
-	static int[] r = null;		// ë­í¬
+	static int[] p = null;		// ºÎ¸ğ
+	static int[] r = null;		// ·©Å©
 	
 	static int N,  M;
 	public static class Edge implements Comparable<Edge>{
