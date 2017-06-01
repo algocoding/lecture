@@ -1,4 +1,4 @@
-Ôªø// ÏÉÅÌò∏ Î∞∞ÌÉÄ ÏßëÌï©(disjoint-set)
+// ªÛ»£ πË≈∏ ¡˝«’(disjoint-set)
 
 public class DisjointSetDemo {
 	static int[] p = null;
@@ -42,20 +42,20 @@ public class DisjointSetDemo {
 		
 		union(1, 3); union(2, 10); union(7, 5); union(3, 7); union(2, 8);
 		
-		System.out.printf("\nunion Ïó∞ÏÇ∞>\n\n");
+		System.out.printf("\nunion ø¨ªÍ>\n\n");
 		
 		print_set(10);
 		
-		System.out.println("3Ïùò ÏßëÌï© -->" + find_set(3));
-		System.out.println("8Ïùò ÏßëÌï© -->" + find_set(8));
+		System.out.println("3¿« ¡˝«’ -->" + find_set(3));
+		System.out.println("8¿« ¡˝«’ -->" + find_set(8));
 		
 	}
 	public static void print_set(int N)
 	{
-		System.out.printf("p[] Î∞∞Ïó¥>\nÏ†ïÏ†ê ");
+		System.out.printf("p[] πËø≠>\n¡§¡° ");
 		for(int i = 1; i <= N; i++)
 			System.out.printf("%2d ", i);
-		System.out.printf("\n---------------------------------------\nÎ∂ÄÎ™® ");
+		System.out.printf("\n---------------------------------------\n∫Œ∏ ");
 		for(int i = 1; i <= N; i++)
 			System.out.printf("%2d ", p[i]);
 		System.out.println();

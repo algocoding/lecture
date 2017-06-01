@@ -1,7 +1,7 @@
-ï»¿
+
 public class BST <T extends Comparable<? super T>>
 {
-	// ë…¸ë“œ í´ë˜ìŠ¤
+	// ³ëµå Å¬·¡½º
 	private static class Node<T> 
 	{
 		T	key;
@@ -18,19 +18,19 @@ public class BST <T extends Comparable<? super T>>
 	public void makeEmpty(){ root = null;}
 	public boolean isEmpty(){ return root == null;}
 	
-	// x ê°’ ê²€ìƒ‰
+	// x °ª °Ë»ö
 	public boolean contains(T x) { return contains(x, root); }
 	
-	// ìµœì†Œê°’ ì°¾ê¸°
+	// ÃÖ¼Ò°ª Ã£±â
 	public T findMin() throws Exception{
 		if(isEmpty()) throw new Exception();
 		return findMin(root).key;
 	}
 	
-	// x ê°’ ì‚½ì…
+	// x °ª »ğÀÔ
 	public void insert(T x){ root = insert(x, root); }
 	
-	//xê°’ ì‚­ì œ
+	//x°ª »èÁ¦
 	public void remove(T x){ root = remove(x, root); }
 	
 	private boolean contains(T x, Node<T> t)
