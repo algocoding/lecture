@@ -7,7 +7,7 @@
 ----------------------------
     #. `피보나치 수 <https://github.com/algocoding/lecture/blob/master/dp/src/FibonacciDemo.java>`_
     
-    #. `동전 거스름돈 <https://github.com/algocoding/lecture/blob/master/dp/src/CoinChhangeDemo.java>`_
+    #. `동전 거스름돈 <https://github.com/algocoding/lecture/blob/master/dp/src/CoinChangeDemo.java>`_
     
     #. `배낭 문제 <https://github.com/algocoding/lecture/blob/master/dp/src/KnapsackDemo.java>`_
     
