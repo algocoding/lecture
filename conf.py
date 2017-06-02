@@ -287,8 +287,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (index, 'algocoding', 'algocoding Documentation',
-     author, 'algocoding', 'One line description of project.',
+    (master_doc, 'algocoding', 'algocoding Documentation',
+     'JongYun Jung', 'algocoding', '알고리즘정리',
      'Miscellaneous'),
 ]
 
