@@ -60,7 +60,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'ProLecture'
-copyright = '2016, JongYun Jung'
+copyright = '2017, JongYun Jung'
 author = 'algocoding.net_at_gmail.com'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -221,7 +221,7 @@ html_show_sourcelink = False
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'algocodingdoc'
+htmlhelp_basename = 'algocoding'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -242,10 +242,10 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-#latex_documents = [
-#    (master_doc, 'algocoding.tex', 'algocoding Documentation',
-#     'JongYun Jung', 'manual'),
-#]
+latex_documents = [
+    (index, 'algocoding.tex', 'AlgoCoding',
+     'JongYun Jung', 'manual'),
+]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
@@ -287,7 +287,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'algocoding', 'algocoding Documentation',
+    (index, 'algocoding', 'algocoding Documentation',
      author, 'algocoding', 'One line description of project.',
      'Miscellaneous'),
 ]
@@ -320,7 +320,7 @@ texinfo_documents = [
 # would mean that specific document would be compressed
 # regardless of the global pdf_compressed setting.
 pdf_documents = [
- ('index', u'AlgoCoding', u'AlgoCoding rst2pdf doc', u'JongYun Jung'),
+ ('index', u'AlgoCoding', u'AlgoCoding doc', u'JongYun Jung'),
 ]
 # A comma-separated list of custom stylesheets. Example:
 pdf_stylesheets = ['sphinx','kerning','a4']
