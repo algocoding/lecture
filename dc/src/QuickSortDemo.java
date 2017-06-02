@@ -1,4 +1,4 @@
-import java.util.Random;
+ï»¿import java.util.Random;
 
 public class QuickSortDemo {
 
@@ -33,7 +33,7 @@ public class QuickSortDemo {
 		for(int val: arr) System.out.print(val + " ");
 		System.out.println();
 		
-		// ÄüÁ¤·Ä
+		// í€µì •ë ¬
 		quickSort(arr, 0, N - 1);
 		
 		for(int val: arr) System.out.print(val + " ");

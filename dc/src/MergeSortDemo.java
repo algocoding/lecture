@@ -1,4 +1,4 @@
-import java.util.*;
+ï»¿import java.util.*;
 
 public class MergeSortDemo {	
 	public static List<Integer> mergesort(List<Integer> list)
@@ -36,7 +36,7 @@ public class MergeSortDemo {
 			list.add(random.nextInt(100));
 		System.out.println(list);
 		
-		// ÄüÁ¤·Ä
+		// í€µì •ë ¬
 		list = mergesort(list);
 		
 		System.out.println(list);
