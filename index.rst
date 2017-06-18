@@ -17,10 +17,9 @@
    string/index
    etc/index
 
-참고
----------------------------------
+.. tip::
 
-강의 내용은  `algocoding.net <http://www.algocoding.net>`_ 에 정리중입니다.
+   강의 내용은  `algocoding.net <http://www.algocoding.net>`_ 에 정리중입니다.
    
    
 ..
