@@ -1,30 +1,30 @@
-import java.util.*;
+ï»¿import java.util.*;
 
 public class HashMapDemo {
 	public static void main(String[] args)
 	{
 		Map<String, Integer> map = new HashMap<String, Integer>();
 		
-		map.put("ÀÌ¼ö±Ù", 1);
-		map.put("À¯Àç¼®", 5);
-		map.put("½Åµ¿¿±", 2);
-		map.put("±è±¸¶ó", 3);
-		map.put("°­È£µ¿", 2);
+		map.put("ì´ìˆ˜ê·¼", 1);
+		map.put("ìœ ì¬ì„", 5);
+		map.put("ì‹ ë™ì—½", 2);
+		map.put("ê¹€êµ¬ë¼", 3);
+		map.put("ê°•í˜¸ë™", 2);
 		
 		Set<String> strSet = map.keySet(); 
 		for(String key: strSet)
 			System.out.println(key);
 		
-		System.out.print("±è±¸¶óÀÇ value = ");
-		System.out.println(map.get("±è±¸¶ó"));
+		System.out.print("ê¹€êµ¬ë¼ì˜ value = ");
+		System.out.println(map.get("ê¹€êµ¬ë¼"));
 		
-		System.out.println("½Åµ¿¿± »èÁ¦");
-		System.out.println(map.remove("½Åµ¿¿±")); // ½Åµ¿¿±ÀÇ value ¹İÈ¯
+		System.out.println("ì‹ ë™ì—½ ì‚­ì œ");
+		System.out.println(map.remove("ì‹ ë™ì—½")); // ì‹ ë™ì—½ì˜ value ë°˜í™˜
 		
-		System.out.println(map.containsKey("½Åµ¿¿±"));
+		System.out.println(map.containsKey("ì‹ ë™ì—½"));
 		
-		System.out.print("°­È£µ¿ »ğÀÔ = ");
-		System.out.println(map.put("°­È£µ¿", 8)); // Map¿¡ ÀúÀåµÈ keyÀÇ value ¹İÈ¯
+		System.out.print("ê°•í˜¸ë™ ì‚½ì… = ");
+		System.out.println(map.put("ê°•í˜¸ë™", 8)); // Mapì— ì €ì¥ëœ keyì˜ value ë°˜í™˜
 		
 	}
 }

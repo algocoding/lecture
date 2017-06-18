@@ -17,16 +17,12 @@
 
     #. `숫자 카드 <https://www.acmicpc.net/problem/10815>`_ 
         - 이분 탐색
-        - `JAVA 예제 <https://github.com/algocoding/lecture/blob/master/dc/src/BOJ10815.java>`_ 
-    
+            
     #. `쿼드 트리 <https://www.acmicpc.net/problem/1992>`_
-        - `JAVA 예제 <https://github.com/algocoding/lecture/blob/master/dc/src/BOJ1992.java>`_ 
-
-    #. `버블 소트 <https://www.acmicpc.net/problem/1517>`_   
-        - counting inversion
-        - `JAVA 예제 <https://github.com/algocoding/lecture/blob/master/dc/src/BOJ1517.java>`_ 
         
+    #. `버블 소트 <https://www.acmicpc.net/problem/1517>`_   
+        - 병합 정렬 + counting inversion
+                
     #. `입국 심사 <https://www.acmicpc.net/problem/3079>`_  
         - 최적화 문제 -> 결정 문제 + 이분 탐색
-        - `JAVA 예제 <https://github.com/algocoding/lecture/blob/master/dc/src/BOJ3079.java>`_ 
-
+        

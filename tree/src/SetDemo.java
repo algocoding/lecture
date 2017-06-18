@@ -1,4 +1,4 @@
-public class SetDemo {
+ï»¿public class SetDemo {
 
 	public static void printBits(String str, int set)
 	{
@@ -14,16 +14,16 @@ public class SetDemo {
 		
 		String str = new String("ABCDEFGH");				
 		int U = 0xff;		
-		System.out.print("ÀüÃ¼ÁýÇÕ> "); printBits(str, U);
+		System.out.print("ì „ì²´ì§‘í•©> "); printBits(str, U);
 		
 		int A = 0x2D, B = 0x65;
 		
-		System.out.print("A  ÁýÇÕ> "); printBits(str, A);		
-		System.out.print("B  ÁýÇÕ> "); printBits(str, B);
-		System.out.print("A ¿©ÁýÇÕ> "); printBits(str, ~A);
-		System.out.print("A|BÇÕÁýÇÕ> "); printBits(str, A|B);
-		System.out.print("A&B±³ÁýÇÕ> "); printBits(str, A&B);
-		System.out.print("A-BÂ÷ÁýÇÕ> "); printBits(str, A & ~B);
+		System.out.print("A  ì§‘í•©> "); printBits(str, A);		
+		System.out.print("B  ì§‘í•©> "); printBits(str, B);
+		System.out.print("A ì—¬ì§‘í•©> "); printBits(str, ~A);
+		System.out.print("A|Bí•©ì§‘í•©> "); printBits(str, A|B);
+		System.out.print("A&Bêµì§‘í•©> "); printBits(str, A&B);
+		System.out.print("A-Bì°¨ì§‘í•©> "); printBits(str, A & ~B);
 	}
 
 }

@@ -1,8 +1,8 @@
-// ¼¼±×¸ÕÆ® Æ®¸® 
+ï»¿// ì„¸ê·¸ë¨¼íŠ¸ íŠ¸ë¦¬ 
 
 public class SegmentTree {
 
-	static int N = 8;	// N: ÀÚ·á¼ö
+	static int N = 8;	// N: ìžë£Œìˆ˜
 	static int[] arr = new int[]{ 3, 9, 4, 2, 7, 8, 10, 1 };
 	static int[] st;
 	static int[] lt;
@@ -76,7 +76,7 @@ public class SegmentTree {
 	}
 	public static void main(String[] args) 
 	{
-		int h = 0;	// ³ôÀÌ
+		int h = 0;	// ë†’ì´
 		for (int n = N - 1; n != 0; h++)
 			n >>= 1;
 		
@@ -85,17 +85,17 @@ public class SegmentTree {
 		
 		buildTree(1, 0, N - 1);
 		
-		System.out.printf("±¸°£ °»½Å (%d, %d) + %d\n", 0, 5, 1);		
+		System.out.printf("êµ¬ê°„ ê°±ì‹  (%d, %d) + %d\n", 0, 5, 1);		
 		updateRange(1, 0, N - 1, 0, 5, 1);
 		
-		System.out.printf("±¸°£ÇÕ(%d, %d) = %d\n", 1, 3, query(1, 0, N - 1, 1, 3));
+		System.out.printf("êµ¬ê°„í•©(%d, %d) = %d\n", 1, 3, query(1, 0, N - 1, 1, 3));
 		
-		System.out.printf("±¸°£ °»½Å (%d, %d) + %d\n", 3, 7, -2); 
+		System.out.printf("êµ¬ê°„ ê°±ì‹  (%d, %d) + %d\n", 3, 7, -2); 
 		updateRange(1, 0, N - 1, 3, 7, -2);
 
 		//-----------------------------------------------------------------------------------
-		// st[], lt[] Ãâ·Â
-		System.out.printf("¹øÈ£|");
+		// st[], lt[] ì¶œë ¥
+		System.out.printf("ë²ˆí˜¸|");
 		for (int i = 1; i < (1 << (h + 1)); i++)
 			System.out.printf("%3d|", i);
 		System.out.printf("\n-------------------------------------------------------------\n");

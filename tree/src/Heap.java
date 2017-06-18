@@ -1,4 +1,4 @@
-// ÀÌÁø Èü
+ï»¿// ì´ì§„ í™
 
 public class Heap {
 	static int SIZE = 100;
@@ -29,7 +29,7 @@ public class Heap {
 		int p = 1, c = p * 2;
 		while(c <= hsize)
 		{
-			if(c + 1 <= hsize && heap[c] > heap[c+1]) // ¿À¸¥ÂÊÀÌ ´õ ÀÛÀº °ªÀÎÁö Ã¼Å©
+			if(c + 1 <= hsize && heap[c] > heap[c+1]) // ì˜¤ë¥¸ìª½ì´ ë” ì‘ì€ ê°’ì¸ì§€ ì²´í¬
 				c++;
 			if(heap[p] > heap[c])
 			{

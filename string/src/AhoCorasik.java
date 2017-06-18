@@ -1,20 +1,20 @@
-// Aho-Corasik ±¸ÇöÇÏ±â
+ï»¿// Aho-Corasik êµ¬í˜„í•˜ê¸°
 import java.util.*;
 
 public class AhoCorasik {
 
-	static final int MAXS = 500; // ÃÖ´ë »óÅÂ¼ö = ÆĞÅÏµéÀÇ ±æÀÌÀÇ ÇÕ
-	static final int MAXC = 26;  // ¹®ÀÚÁıÇÕÀÇ ÃÖ´ë Å©±â
+	static final int MAXS = 500; // ìµœëŒ€ ìƒíƒœìˆ˜ = íŒ¨í„´ë“¤ì˜ ê¸¸ì´ì˜ í•©
+	static final int MAXC = 26;  // ë¬¸ìì§‘í•©ì˜ ìµœëŒ€ í¬ê¸°
 
-	static int[] out = new int[MAXS];	// Ãâ·Â ÇÔ¼ö
-	static int[] f = new int[MAXS]; 	// ½ÇÆĞ(failure) ÇÔ¼ö
-	static int[][] g = new int[MAXS][MAXC + 1]; // goto ÇÔ¼ö(Æ®¶óÀÌ): g[»óÅÂ¹øÈ£][¹®ÀÚ]
+	static int[] out = new int[MAXS];	// ì¶œë ¥ í•¨ìˆ˜
+	static int[] f = new int[MAXS]; 	// ì‹¤íŒ¨(failure) í•¨ìˆ˜
+	static int[][] g = new int[MAXS][MAXC + 1]; // goto í•¨ìˆ˜(íŠ¸ë¼ì´): g[ìƒíƒœë²ˆí˜¸][ë¬¸ì]
 
-	static int buildMatchingMachine(String[] arr, int k) // »óÅÂ¼ö ¹İÈ¯
+	static int buildMatchingMachine(String[] arr, int k) // ìƒíƒœìˆ˜ ë°˜í™˜
 	{
 	    int states = 1;
 
-	    // goto ÇÔ¼ö »ı¼º, k: ÆĞÅÏ ¼ö
+	    // goto í•¨ìˆ˜ ìƒì„±, k: íŒ¨í„´ ìˆ˜
 	    for (int i = 0; i < k; ++i)
 	    {
 	        String word = arr[i];
@@ -64,7 +64,7 @@ public class AhoCorasik {
 	                failure = g[failure][ch];
 	                f[g[state][ch]] = failure;
 
-	                // Ãâ·Â ÇÔ¼ö¿¡ °á°ú Ãß°¡
+	                // ì¶œë ¥ í•¨ìˆ˜ì— ê²°ê³¼ ì¶”ê°€
 	                out[g[state][ch]] |= out[failure];
 
 	                Q.add(g[state][ch]);
@@ -78,7 +78,7 @@ public class AhoCorasik {
 	    int answer = currentState;
 	    int ch = nextInput - 'a';
 	    
-	    while (g[answer][ch] == -1) // ½ÇÆĞÇÔ¼ö °ª ¼³Á¤
+	    while (g[answer][ch] == -1) // ì‹¤íŒ¨í•¨ìˆ˜ ê°’ ì„¤ì •
 	        answer = f[answer];
 
 	    return g[answer][ch];
@@ -88,21 +88,21 @@ public class AhoCorasik {
 	{
 
 	    buildMatchingMachine(arr, k);
-	    int currentState = 0;       // ÃÊ±â »óÅÂ
+	    int currentState = 0;       // ì´ˆê¸° ìƒíƒœ
 
 	    for (int i = 0; i < text.length(); ++i)
 	    {
 	        currentState = findNextState(currentState, text.charAt(i));
 	        
-	        if (out[currentState] == 0)  // ¸ÅÄª ½ÇÆĞ ½Ã, ´ÙÀ½ ¹®ÀÚ·Î
+	        if (out[currentState] == 0)  // ë§¤ì¹­ ì‹¤íŒ¨ ì‹œ, ë‹¤ìŒ ë¬¸ìë¡œ
 	             continue;
 
 	        for (int j = 0; j < k; ++j)
 	        {
 	            if ((out[currentState] & (1 << j)) != 0)
 	            {
-	            	System.out.println("¹®ÀÚ¿­ " + arr[j]);
-	                System.out.printf(" %d ºÎÅÍ %d ±îÁö Æ÷ÇÔ\n" , i - arr[j].length() + 1, i);
+	            	System.out.println("ë¬¸ìì—´ " + arr[j]);
+	                System.out.printf(" %d ë¶€í„° %d ê¹Œì§€ í¬í•¨\n" , i - arr[j].length() + 1, i);
 	            }
 	        }
 	    }
@@ -113,14 +113,14 @@ public class AhoCorasik {
 	    String[] arr = new String[]{"he", "she", "hers", "his"};
 	    String text = "ahishers";
 	    
-	    System.out.println("ÆĞÅÏµé> ");
+	    System.out.println("íŒ¨í„´ë“¤> ");
 	    int len = 0;
 	    for(String str: arr)
 	    {
 	    	System.out.print(str + " ");
 	    	len += str.length();
 	    }
-	    System.out.println("\nÅØ½ºÆ®> " + text + "\n------------------");
+	    System.out.println("\ní…ìŠ¤íŠ¸> " + text + "\n------------------");
 	    for(int i = 0; i <= len; i++)
 	    	for(int j = 0; j < MAXC; j++)
 	    		g[i][j] = -1;

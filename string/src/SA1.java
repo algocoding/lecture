@@ -1,8 +1,8 @@
-import java.util.*;
+ï»¿import java.util.*;
 
 public class SA1 
 {
-	static int N;	// textÀÇ ±æÀÌ ÀúÀå
+	static int N;	// textì˜ ê¸¸ì´ ì €ì¥
 	static char[] text;
 	static int[] SA;
 	static int[] LCP;

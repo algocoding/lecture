@@ -1,4 +1,4 @@
-/* 입력>
+﻿/* 입력>
 ------------------------
 8 10
 1 2 2 
@@ -37,7 +37,7 @@ public class ShortestPathBrute {
 		System.out.printf("\n");
 	}
 	
-	// D[]가 변경되지 않을 때까지 간선 완화를 수행
+	// D[]값이 변경되지 않을 때까지 반복
 	public static void BruteForce(int s)
 	{
 		for(int i = 1; i <= V; i++)

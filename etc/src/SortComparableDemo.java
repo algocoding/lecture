@@ -1,4 +1,4 @@
-
+ï»¿
 import java.util.Arrays;
 import java.util.Collections;
 
@@ -25,20 +25,20 @@ public class SortComparableDemo {
 	public static void main(String[] args)
 	{
 		Node[] nodes = new Node[5];
-		nodes[0] = new Node("½Åµ¿¿±", 3);
-		nodes[1] = new Node("ÀÌ¼ö±Ù", 1);
-		nodes[2] = new Node("À¯Àç¼®", 5);
-		nodes[3] = new Node("°­È£µ¿", 4);
-		nodes[4] = new Node("±è±¸¶ó", 2);
+		nodes[0] = new Node("ì‹ ë™ì—½", 3);
+		nodes[1] = new Node("ì´ìˆ˜ê·¼", 1);
+		nodes[2] = new Node("ìœ ì¬ì„", 5);
+		nodes[3] = new Node("ê°•í˜¸ë™", 4);
+		nodes[4] = new Node("ê¹€êµ¬ë¼", 2);
 		
-		// ¿À¸§Â÷¼ø Á¤·Ä
+		// ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
 		Arrays.sort(nodes);		
 		for(Node node: nodes)
 			System.out.println(node);;
 		
 		System.out.println("----------------------------");
 			 
-		// ³»¸²Â÷¼ø Á¤·Ä
+		// ë‚´ë¦¼ì°¨ìˆœ ì •ë ¬
 		Arrays.sort(nodes, Collections.reverseOrder());
 		for(Node node: nodes)
 			System.out.println(node);

@@ -1,4 +1,4 @@
-import java.util.Arrays;
+ï»¿import java.util.Arrays;
 
 public class BinarySearchDemo {
 	
@@ -11,7 +11,7 @@ public class BinarySearchDemo {
 		for(int val: arr)
 			System.out.print(val + " ");
 		System.out.println();
-		System.out.println("45 => " + Arrays.binarySearch(arr, 45)); // ÀÎµ¦½º
-		System.out.println("15 => " + Arrays.binarySearch(arr, 15)); // À½¼ö
+		System.out.println("45 => " + Arrays.binarySearch(arr, 45)); // ì¸ë±ìŠ¤
+		System.out.println("15 => " + Arrays.binarySearch(arr, 15)); // ìŒìˆ˜
 	}
 }

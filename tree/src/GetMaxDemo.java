@@ -1,17 +1,17 @@
-
+ï»¿
 public class GetMaxDemo {
 
 	static int cnt = 0;
 	static int[] arr = new int[]{25, 6, 73, 62, 90, 24, 15, 38, 50, 54};
 	
-	// len: ¹è¿­ÀÇ Å©±â
+	// len: ë°°ì—´ì˜ í¬ê¸°
 	public static int getMax(int[] arr, int len)
 	{
 		if(len == 1) return arr[0];
 		int ret = getMax(arr, len - 1);
 		return ret > arr[len - 1]? ret: arr[len - 1];
 	}
-	// lo: ½ÃÀÛ ÀÎµ¦½º, hi: ³¡ ÀÎµ¦½º
+	// lo: ì‹œì‘ ì¸ë±ìŠ¤, hi: ë ì¸ë±ìŠ¤
 	public static int getMax(int[] arr, int lo, int hi)
 	{
 		if(lo == hi) return arr[lo];
@@ -26,7 +26,7 @@ public class GetMaxDemo {
 			System.out.print(val + " ");		
 		System.out.println();
 		
-		System.out.println("ÃÖ´ë°ª = " + getMax(arr, 10));
-		System.out.println("ÃÖ´ë°ª = " + getMax(arr, 0, 9));
+		System.out.println("ìµœëŒ€ê°’ = " + getMax(arr, 10));
+		System.out.println("ìµœëŒ€ê°’ = " + getMax(arr, 0, 9));
 	}
 }
