@@ -7,7 +7,7 @@
 
     #. 그래프 탐색
         - `깊이 우선 탐색 <https://github.com/algocoding/lecture/blob/master/graph/src/DFSDemo.java>`_
-        - `너비우선 탐색 <https://github.com/algocoding/lecture/blob/master/graph/src/BFSDemo.java>`_
+        - `너비 우선 탐색 <https://github.com/algocoding/lecture/blob/master/graph/src/BFSDemo.java>`_
     
     #. 최단 경로
         - `Brute-force <https://github.com/algocoding/lecture/blob/master/graph/src/ShortestPathBrute.java>`_
