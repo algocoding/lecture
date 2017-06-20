@@ -31,8 +31,7 @@
     
     #. `미로 탐색  <https://www.acmicpc.net/problem/2178>`_ 
         - BFS
-        - `JAVA BFS <https://github.com/algocoding/lecture/blob/master/graph/src/BOJ2178_bfs.java>`_ || 
-        `JAVA DFS <https://github.com/algocoding/lecture/blob/master/graph/src/BOJ2178_dfs.java>`_
+        - `JAVA BFS <https://github.com/algocoding/lecture/blob/master/graph/src/BOJ2178_bfs.java>`_ || `JAVA DFS <https://github.com/algocoding/lecture/blob/master/graph/src/BOJ2178_dfs.java>`_
         
     #. `최단 경로  <https://www.acmicpc.net/problem/1753>`_ 
         - DFS, BFS, Dijstra
