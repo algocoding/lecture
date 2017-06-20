@@ -1,4 +1,4 @@
-/*
+﻿/*
 입력>
 -----------------------------------------
 8 10
@@ -33,11 +33,11 @@ public class DFSDemo {
 	public static void DFS_iterative(int v)
 	{
 		boolean[] visited = new boolean[100];
-		Stack<Integer> S = new Stack<Integer>();
+		LinkedList<Integer> S = new LinkedList<Integer>();
 		
 		visited[v] = true;
 		System.out.print(v + " ");
-		S.push(v);	
+		S.addFirst(v);	
 		
 		while(!S.isEmpty())
 		{
@@ -49,11 +49,11 @@ public class DFSDemo {
 					v = i;
 					visited[i] = true;
 					System.out.print(v + " ");
-					S.push(v);
+					S.addFirst(v);
 					break;
 				}
 			}
-			if(i > V) v = S.pop();
+			if(i > V) v = S.removeFirst();
 		}
 	}
 
@@ -73,8 +73,7 @@ public class DFSDemo {
 			G[from][to] = 1;
 			G[to][from] = 1;
 		}
-		//DFS(1);
-		DFS_iterative(1);
+		DFS(1);
 		sc.close();		
 	}
 }
