@@ -28,7 +28,7 @@
         
     #. `트리의 높이와 너비 <https://www.acmicpc.net/problem/2250>`_
         - **주의** :루트가 1번 노드가 아닐 수 있다.
-        - - `JAVA 예제 <https://github.com/algocoding/lecture/blob/master/tree/src/BOJ2250.java>`_
+        - `JAVA 예제 <https://github.com/algocoding/lecture/blob/master/tree/src/BOJ2250.java>`_
     
     #. `최소 공통 조상(LCA, Lowest Common Ancestor) <https://www.acmicpc.net/problem/11437>`_ 
         - **주의** : 입력으로 제공되는 간선(u,v) 정보에서 먼저 입력되는 u가 반드시 부모가 아닐 수 있다. 
