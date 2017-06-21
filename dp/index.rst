@@ -26,7 +26,9 @@
             
     #. `이친수 <https://www.acmicpc.net/problem/2193>`_ 
         - long 자료형 사용
-        
+
+    #. _`RGB 거리 <https://www.acmicpc.net/problem/1149>`_
+    
     #. `동전2 <https://www.acmicpc.net/problem/2294>`_                  
             
     #. `LCS <https://www.acmicpc.net/problem/9251>`_                   
