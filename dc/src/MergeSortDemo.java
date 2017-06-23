@@ -36,7 +36,6 @@ public class MergeSortDemo {
 			list.add(random.nextInt(100));
 		System.out.println(list);
 		
-		// 퀵정렬
 		list = mergesort(list);
 		
 		System.out.println(list);
