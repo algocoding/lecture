@@ -1,25 +1,26 @@
-================================
+﻿================================
 강의 자료들
 ================================
 
-연습 문제
+목차
 ===============================
 
 .. toctree::   
    :maxdepth: 1  
    :titlesonly:   
    
-   tree/index
+   brute/index   
    graph/index
    backtrack/index
-   dp/index
-   dc/index
+   dp/index   
+   tree/index
    string/index
-   etc/index
+   etc/index   
 
-.. tip::
+참고
+---------------------------------
 
-   강의 내용은  `algocoding.net <http://www.algocoding.net>`_ 에 정리중입니다.
+강의 내용은  `algocoding.net <http://www.algocoding.net>`_ 에 정리중입니다.
    
    
 ..

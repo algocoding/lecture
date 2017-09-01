@@ -1,13 +1,16 @@
-Ôªø// ÏÑ∏Í∑∏Î®ºÌä∏ Ìä∏Î¶¨ 
+package Day05;
+// ±∏∞£«’ ±∏«œ±‚1 https://www.acmicpc.net/problem/2042
+// 10999
+import java.util.*;
 
 public class SegmentTree {
 
-	static int N = 8;	// N: ÏûêÎ£åÏàò
-	static int[] arr = new int[]{ 3, 9, 4, 2, 7, 8, 10, 1 };
-	static int[] st;
-	static int[] lt;
-	
-	public static int buildTree(int id, int l, int r)
+	static final int MAXN = 1000000;
+	static long[] arr = new long[MAXN + 1];
+	static long[] st = new long[1 << 21 + 1];
+	static long[] lt = new long[1 << 21 + 1];;
+	static int N, M, K;
+	public static long buildTree(int id, int l, int r)
 	{
 		if(l == r)
 		{
@@ -30,7 +33,7 @@ public class SegmentTree {
 			lt[id] = 0;
 		}
 	}
-	public static int query(int id, int l, int r, int i, int j)
+	public static long query(int id, int l, int r, int i, int j)
 	{
 		lazy_propagation(id, l, r);
 		
@@ -67,7 +70,9 @@ public class SegmentTree {
 				lt[id*2 + 1] += v;
 			}
 			return;
-		}		
+		}
+		
+		
 		int m = (l + r) / 2;		
 		updateRange(id * 2, l, m, i, j, v);
 		updateRange(id * 2 + 1, m + 1, r, i, j, v);
@@ -76,39 +81,36 @@ public class SegmentTree {
 	}
 	public static void main(String[] args) 
 	{
-		int h = 0;	// ÎÜíÏù¥
-		for (int n = N - 1; n != 0; h++)
-			n >>= 1;
+		//System.out.println("±∏∞£ ∆Æ∏Æ....lazy propagation....");
+		Scanner sc = new Scanner(System.in);
+
+		N = sc.nextInt();
+		M = sc.nextInt();
+		K = sc.nextInt();		
+		M = M + K;
 		
-		st = new int[1 << (h + 1)];
-		lt = new int[1 << (h + 1)];
+		for(int i = 0; i < N; i++)
+			arr[i] = sc.nextInt();
 		
 		buildTree(1, 0, N - 1);
+		int a, b, c, d;
 		
-		System.out.printf("Íµ¨Í∞Ñ Í∞±Ïã† (%d, %d) + %d\n", 0, 5, 1);		
-		updateRange(1, 0, N - 1, 0, 5, 1);
-		
-		System.out.printf("Íµ¨Í∞ÑÌï©(%d, %d) = %d\n", 1, 3, query(1, 0, N - 1, 1, 3));
-		
-		System.out.printf("Íµ¨Í∞Ñ Í∞±Ïã† (%d, %d) + %d\n", 3, 7, -2); 
-		updateRange(1, 0, N - 1, 3, 7, -2);
+		for(int i = 0; i < M; i++)
+		{
+			a = sc.nextInt();
+			b = sc.nextInt();
+			c = sc.nextInt();
+			
+			if(a == 1)
+			{
+				d = sc.nextInt();				
+				arr[b] = c;
+				updateRange(1, 0, N - 1, b - 1, c - 1, d);
+			}else{
+				System.out.println(query(1, 0, N - 1, b - 1, c - 1));
+			}
+		}
+		sc.close();
+	}
 
-		//-----------------------------------------------------------------------------------
-		// st[], lt[] Ï∂úÎ†•
-		System.out.printf("Î≤àÌò∏|");
-		for (int i = 1; i < (1 << (h + 1)); i++)
-			System.out.printf("%3d|", i);
-		System.out.printf("\n-------------------------------------------------------------\n");
-		System.out.printf("st |");
-		for (int i = 1; i < (1 << (h + 1)); i++)
-			System.out.printf("%3d|", st[i]);		
-		System.out.printf("\n-------------------------------------------------------------\n");
-		System.out.printf("lt |");
-		for (int i = 1; i < (1 << (h + 1)); i++)
-			System.out.printf("%3d|", lt[i]);
-		//-----------------------------------------------------------------------------------					
-	}
-	public static void print_arr(){
-		
-	}
 }

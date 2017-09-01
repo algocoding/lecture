@@ -1,4 +1,6 @@
-﻿import java.util.LinkedList;
+﻿package Day03;
+
+import java.util.LinkedList;
 import java.util.Queue;
 
 public class SubsetBFSDemo {

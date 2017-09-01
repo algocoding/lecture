@@ -1,13 +1,12 @@
-﻿
+package Day04;
+
 public class CoinChangeDemo {
-	static int[] coin = new int[]{1, 4, 5, 10};
+	static int[] coin = new int[]{1, 4, 6};
 	
 	public static int coinChange(int money)
 	{
-		if(money == 0)
-		{
-			return 0;
-		}
+		if(money == 0) return 0;
+		
 		int min = 0xfff;
 		for(int i = 0; i < coin.length; i++)
 		{
@@ -30,10 +29,11 @@ public class CoinChangeDemo {
 		{
 			if(money < coin[i]) continue;
 
-			int ret = coinChange(money - coin[i]);
+			int ret = coinChange_memo(money - coin[i]);
 			
 			if(min > ret) min = ret;
 		}
+		System.out.printf("memo[%d] = %2d\n", money, min + 1);
 		return memo[money] = min + 1;
 	}
 	public static int coinChange_iter(int money)

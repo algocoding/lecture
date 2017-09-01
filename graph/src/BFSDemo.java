@@ -1,46 +1,47 @@
-ï»¿/*
-ìž…ë ¥>
+/*
+ÀÔ·Â> 7(Á¤Á¡¼ö), 8(°£¼±¼ö)
 -----------------------------------------
-8 10
+7 8
 1 2 
 1 3 
 2 4 
 2 5 
-3 6 
-4 7 
+3 7 
+4 6 
 5 6 
-5 7 
-6 8 
-7 8
+6 7 
 -----------------------------------------
 */
+package Day02;
 import java.util.*;
 public class BFSDemo {
-	static int[][] G = new int[100][100];
-	static boolean[] visited = new boolean[100];
-	static int V, E;
-	public static void BFS(int v)
+
+	static int[][] G;			// ÀÎÁ¢ Çà·Ä
+	static boolean[] visited;	// ¹æ¹® Á¤º¸
+	static int V, E;			// Á¤Á¡¼ö, °£¼±¼ö
+	static void BFS(int v)
 	{
-		Queue<Integer> Q = new LinkedList<Integer>();
-		visited[v] = true;
-		Q.add(v);		
-		System.out.print(v + " ");
-		while(!Q.isEmpty())
+		visited = new boolean[V + 1];
+		int[] Q = new int[V + 1];
+		int front = -1, rear = -1;
+		
+		visited[v] = true; System.out.print(v + " ");
+		Q[++rear] = v;
+		
+		while(front != rear)
 		{
-			v = Q.remove();
-			
+			v = Q[++front];
 			for(int i = 1; i <= V; i++)
 			{
 				if(G[v][i] == 1 && visited[i] == false)
 				{
 					visited[i] = true;
-					Q.add(i);
 					System.out.print(i + " ");
-				}	
+					Q[++rear] = i;
+				}
 			}
 		}
-	}
-
+	}	
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
@@ -48,16 +49,17 @@ public class BFSDemo {
 		V = sc.nextInt();
 		E = sc.nextInt();
 		
-		int from, to;
+		G = new int[V + 1][V + 1];		
+		
+		int u, v;
 		for(int i = 0; i < E; i++)
 		{
-			from = sc.nextInt();
-			to = sc.nextInt();
+			u = sc.nextInt();
+			v = sc.nextInt();
 			
-			G[from][to] = 1;
-			G[to][from] = 1;
+			G[u][v] = G[v][u] = 1;
 		}
 		BFS(1);
-		sc.close();
-	}
+		sc.close();		
+	}	
 }

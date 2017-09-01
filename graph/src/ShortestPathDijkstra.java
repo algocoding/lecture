@@ -1,64 +1,50 @@
 ﻿/* 입력>
 ------------------------
-8 10
-1 2 2 
-1 3 2 
-2 4 3 
-2 5 5
-3 6 1
-4 7 4
-5 6 2
-5 7 1
-6 8 6
-7 8 2
+10 14
+1 2 12 
+1 3 15 
+2 5 4 
+2 6 10
+3 4 21
+3 7 7
+4 8 25
+5 6 3
+5 9 13
+6 7 10
+7 8 19
+7 10 9
+8 10 5
+9 10 15
 ------------------------
 */
+package Day02;
 import java.util.*;
 
 public class ShortestPathDijkstra {
-	static ArrayList<Vertex>[] G;
-	static int[] D;
-	static int[] P;
-	
-	static int V, E;
-
-	
-	// D[], P[] 배열 출력 하기
-	public static void printResult()
-	{
-		for(int i = 1; i <= V; i++)
-		{
-			System.out.printf("%d ", D[i]);
-		}
-		System.out.printf("\n");
-		for(int i = 1; i <= V; i++)
-		{
-			System.out.printf("%d ", P[i]);
-		}
-		System.out.printf("\n");
-	}
+	static ArrayList<Vertex>[] G;	// 인접 행렬
+	static int[] D;					// 거리 저장
+	static int[] P;					// 최단 경로 트리 저장
+	static int V, E;				// 정점수, 간선수
 	
 	// 우선 순위 큐에 저장되는 정보
 	private static class Vertex implements Comparable<Vertex>{
-		int v;	// 정점
-		int d;	// 가중치 또는 거리
-		Vertex(int a, int b)
-		{
+		int v;	// 정점 번호
+		int d;	// 시작점에서 거리
+		Vertex(int a, int b) {
 			v = a; d = b; 
 		}
-		public String toString()
-		{
-			return v +" " + d + "\n";			
-		}		
 		public int compareTo(Vertex arg) {			 
 			return d - arg.d;
 		}
+		public String toString() {
+			return v +" " + d + "\n";			
+		}		
 	}
 	// 다익스트라 + 우선순위 큐
 	public static void dijkstra(int v)
 	{
 		for(int i = 1; i <= V; i++)
-			D[i] = 0xffffff;
+			D[i] = 0xffffff;		// D[] 배열 초기화
 		D[v] = 0; P[v] = v;
 		
 		PriorityQueue<Vertex> Q = new PriorityQueue<Vertex>();		
@@ -81,7 +67,7 @@ public class ShortestPathDijkstra {
 		}
 	}
 	public static void main(String[] args) {		
-Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		
 		V = sc.nextInt();
 		E = sc.nextInt();
@@ -105,9 +91,23 @@ Scanner sc = new Scanner(System.in);
 		}			
 		sc.close();
 		
-		System.out.println("최단 경로 / 다익스트라");
-		System.out.println("----------------");
-		dijkstra(1); printResult();
-		System.out.println("----------------");
+		System.out.println("최단 경로 - 다익스트라> ");		
+		dijkstra(1); 
+		printResult();		
 	}
+	// D[], P[] 배열 출력 하기
+	public static void printResult()
+	{
+		for(int i = 1; i <= V; i++)
+			System.out.printf("%2d ", i);
+		
+		System.out.println("\n------------------------------------------");
+		for(int i = 1; i <= V; i++)
+			System.out.printf("%2d ", D[i]);
+		System.out.println("\n------------------------------------------");		
+		for(int i = 1; i <= V; i++)
+			System.out.printf("%2d ", P[i]);		
+		System.out.printf("\n");
+	}	
+		
 }

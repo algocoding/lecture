@@ -1,4 +1,5 @@
-﻿
+package Day04;
+
 public class FibonacciDemo {
 	static int fibonacci(int n)
 	{

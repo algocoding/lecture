@@ -1,5 +1,4 @@
-﻿
-
+﻿package Day03;
 
 public class KnapsackDemo {
 	static int W = 10;
@@ -18,7 +17,7 @@ public class KnapsackDemo {
 		}
 		System.out.println();
 	}
-	// 반환 값 없음.
+	// 반환 값 없는 knapsack 함수
 	public static void knapsack(int k, int weight, int value)
 	{
 		if( weight > W) return;
@@ -35,7 +34,7 @@ public class KnapsackDemo {
 		bits[k] = false; knapsack(k + 1,  weight, value);
 	}
 	
-	// 반환 값을 가지는 형태로 구현
+	// 최대 이익을 반환 knapsack 함수
 	public static int knapsack(int k, int weight)
 	{
 		if(k == N || weight == 0) return 0;
@@ -48,6 +47,7 @@ public class KnapsackDemo {
 		
 		return case1 > case2? case1: case2;
 	}
+	
 	public static void main(String[] args) {
 		knapsack(0, 0, 0);
 		System.out.println("최대 가치 = " + max);

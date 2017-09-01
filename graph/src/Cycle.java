@@ -29,6 +29,7 @@
 8 7
 -------------
 */
+package Day02;
 import java.util.Scanner;
 
 public class Cycle {

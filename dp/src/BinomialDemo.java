@@ -1,4 +1,6 @@
-ï»¿import java.util.*;
+package Day04;
+
+import java.util.*;
 
 public class BinomialDemo {
 
@@ -36,7 +38,7 @@ public class BinomialDemo {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("n ê³¼ r ìž…ë ¥> ");
+		System.out.println("n °ú r ÀÔ·Â> ");
 		
 		n = sc.nextInt();
 		r = sc.nextInt();

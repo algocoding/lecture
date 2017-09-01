@@ -1,4 +1,5 @@
-﻿import java.util.*;
+﻿package Day03;
+import java.util.*;
 
 public class nQueenDemo {
 	static int[] COL;

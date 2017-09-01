@@ -1,22 +1,15 @@
-ï»¿/*
-ì…ë ¥>
---------------------------------------------------------
-13 12
-1 2 1 3 2 4 2 5 3 6 3 7 4 8 5 9 6 10 6 11 7 12 10 13
---------------------------------------------------------
-*/
-import java.io.FileInputStream;
+package Day05;
 import java.util.*;
 
 public class TreeDemo {
-	static int[] L = new int[100];	// ì™¼ìª½ ìì‹
-	static int[] R = new int[100];	// ì˜¤ë¥¸ìª½ ìì‹
-	static int[] P = new int[100];	// ë¶€ëª¨	
-	static int V, E;	// ë…¸ë“œìˆ˜, ê°„ì„ ìˆ˜	
+	static int[] L = new int[100];	// ¿ŞÂÊ ÀÚ½Ä
+	static int[] R = new int[100];	// ¿À¸¥ÂÊ ÀÚ½Ä
+	static int[] P = new int[100];	// ºÎ¸ğ	
+	static int V, E;	// ³ëµå¼ö, °£¼±¼ö	
 	
 	public static void bfsWithQ(int v)
 	{
-		System.out.println("íŠ¸ë¦¬ì˜ ë„ˆë¹„ìš°ì„ íƒìƒ‰_Queue<>> ");
+		System.out.println("Æ®¸®ÀÇ ³Êºñ¿ì¼±Å½»ö_Queue<>> ");
 		Queue<Integer> Q = new LinkedList<Integer>();
 		Q.add(v);
 		
@@ -30,7 +23,7 @@ public class TreeDemo {
 	}
 	public static void bfs(int v)
 	{
-		System.out.println("íŠ¸ë¦¬ì˜ ë„ˆë¹„ìš°ì„ íƒìƒ‰> ");
+		System.out.println("Æ®¸®ÀÇ ³Êºñ¿ì¼±Å½»ö> ");
 		int[] Q = new int[100];
 		int front = -1, rear = -1;
 		
@@ -90,8 +83,8 @@ public class TreeDemo {
 		
 		inorder(1); System.out.print('\n');		
 		
-		System.out.printf("íŠ¸ë¦¬ì˜ ë†’ì´ = %d\n", TreeDemo.tree_height(1));
-		System.out.printf("íŠ¸ë¦¬ì˜ í¬ê¸° = %d\n", TreeDemo.tree_size(1));
+		System.out.printf("Æ®¸®ÀÇ ³ôÀÌ = %d\n", TreeDemo.tree_height(1));
+		System.out.printf("Æ®¸®ÀÇ Å©±â = %d\n", TreeDemo.tree_size(1));
 		
 		bfs(1); System.out.print('\n');
 		bfsWithQ(1); System.out.print('\n');

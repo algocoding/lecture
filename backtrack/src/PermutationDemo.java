@@ -1,7 +1,8 @@
-﻿
+﻿package Day03;
+
 public class PermutationDemo {
-	static char[] str;
-	static char[] order;	
+	static char[] str = new String("ABCDE").toCharArray();
+	static char[] order = new char[str.length];	
 	static int cnt = 0;
 	
 	public static void swap(int i, int j)
@@ -9,16 +10,13 @@ public class PermutationDemo {
 		char t = str[i]; str[i] = str[j]; 
 		str[j] = t;		
 	}
-	public static void perm_iter(int n, int r)
+	public static void perm_iter()
 	{
-		
-		for(int i = 0; i < n; i++)
-		{
-			for(int j = 0; j < n; j++)
-			{
+		int n = str.length; 		// 세개의 for문 -> nP3
+		for(int i = 0; i < n; i++) {
+			for(int j = 0; j < n; j++) {
 				if(i == j) continue;
-				for(int k = 0; k < n; k++)
-				{
+				for(int k = 0; k < n; k++) {
 					if(i == k || j == k) continue;
 					System.out.printf("%3d> %c%c%c\n", ++cnt, str[i], str[j], str[k]);
 				}
@@ -64,7 +62,7 @@ public class PermutationDemo {
 		}
 	}
 	// 중복 순열
-	public static void perm_re(int k, int n, int r)
+	public static void perm_repeat(int k, int n, int r)
 	{
 		if(k == r)
 		{
@@ -77,17 +75,15 @@ public class PermutationDemo {
 		for(int i = 0; i < n; i++)
 		{
 			order[k] = str[i];
-			perm_re(k + 1, n, r);
+			perm_repeat(k + 1, n, r);
 		
 		}
 	}
 	public static void main(String[] args) {
-		String tmp = new String("ABCDE");
-		str = tmp.toCharArray();
-		order = new char[tmp.length()];
 		
-		
-		perm_swap(0, tmp.length(), 3);		
+		perm_iter();
+		//perm(0, str.length, 3, 0);
+		//perm_swap(0, str.length, 3);		
 	}
 
 }

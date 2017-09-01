@@ -1,4 +1,5 @@
-ï»¿// ì´ì§„ í™
+package Day05;
+// ÀÌÁø Èü
 
 public class Heap {
 	static int SIZE = 100;
@@ -29,7 +30,7 @@ public class Heap {
 		int p = 1, c = p * 2;
 		while(c <= hsize)
 		{
-			if(c + 1 <= hsize && heap[c] > heap[c+1]) // ì˜¤ë¥¸ìª½ì´ ë” ì‘ì€ ê°’ì¸ì§€ ì²´í¬
+			if(c + 1 <= hsize && heap[c] > heap[c+1]) // ¿À¸¥ÂÊÀÌ ´õ ÀÛÀº °ªÀÎÁö Ã¼Å©
 				c++;
 			if(heap[p] > heap[c])
 			{

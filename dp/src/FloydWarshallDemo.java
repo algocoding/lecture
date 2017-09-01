@@ -1,11 +1,13 @@
-ï»¿/*ìž…ë ¥
+/*ÀÔ·Â
 5
-0 3 8 0 -4
-0 0 0 1 7
-0 4 0 0 0 
-2 0 -5 0 0
-0 0 0 6 0
+0 4 2 5 0
+0 0 1 0 4
+1 3 0 1 2 
+-2 0 0 0 2
+0 -3 3 1 0
 */
+package Day04;
+
 import java.util.*;
 
 public class FloydWarshallDemo {
@@ -18,7 +20,7 @@ public class FloydWarshallDemo {
 		N = sc.nextInt();
 		D = new int[N + 1][N + 1];
 		
-		for(int i = 1; i <= N; i++)	// 1ë²ˆ ~ Në²ˆ ì •ì 
+		for(int i = 1; i <= N; i++)	// 1¹ø ~ N¹ø Á¤Á¡
 		for(int j = 1; j <= N; j++)
 		{
 			D[i][j] = sc.nextInt();

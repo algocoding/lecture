@@ -1,45 +1,67 @@
-﻿
-03. 완전탐색/Backtraking
+﻿========================================
+03. 백트래킹(Backtracking)
 ========================================
 
 예제 코드
-----------------------------
+========================================
 
-    #. `부분 집합 생성 <https://github.com/algocoding/lecture/blob/master/backtrack/src/SubsetDemo.java>`_
+    #. `부분 집합 생성 <https://github.com/algocoding/lecture/blob/master/backtrack/src/SubsetDemo.java>`_         
+        - 바이너리 카운팅
+        - 재귀 호출
+        
     #. `순열 생성 <https://github.com/algocoding/lecture/blob/master/backtrack/src/PermutationDemo.java>`_
-        - 교환을 통한 순열 생성 / 비트 마스크를 이용한 생성
+        - 교환을 통한 순열 생성 
+        - 비트 마스크를 활용한 생성
+        
     #. `조합 생성 <https://github.com/algocoding/lecture/blob/master/backtrack/src/CombinationDemo.java>`_
-        - 재귀적 정의
-    #. `동전 거스름돈 <https://github.com/algocoding/lecture/blob/master/backtrack/src/CoinChangeDemo.java>`_
-    #. `배낭 문제 <https://github.com/algocoding/lecture/blob/master/backtrack/src/KnapsackDemo.java>`_
-
+        - 조합의 재귀적 정의로 생성
+        - 요소를 순차적으로 선택하면서 생성
+        
+    #. `동전 거스름돈 <https://github.com/algocoding/lecture/blob/master/backtrack/src/CoinchangeDemo.java>`_
     
-연습문제 
-----------------------------
+    #. `배낭 문제 <https://github.com/algocoding/lecture/blob/master/backtrack/src/KnapsackDemo.java>`_
+        - 부분 집합을 생성하는 방법으로 탐색하기
+        - 재귀적 알고리즘 형태
+        
+    #. `N-Queen 문제 <https://github.com/algocoding/lecture/blob/master/backtrack/src/nQueeonDemo.java>`_
+        - 순열 생성 + 가지 치기
+    
+연습 문제 
+========================================
+
+    #. 병원 짓기
+        - `바이너리 카운팅 <https://github.com/algocoding/lecture/blob/master/backtrack/src/Day3_1BinCnting.java>`_
+        - `재귀 호출 <https://github.com/algocoding/lecture/blob/master/backtrack/src/Day3_1Backtrack.java>`_
+    
+    #. 방 배정
+        - `중복 순열(재귀) <https://github.com/algocoding/lecture/blob/master/backtrack/src/Day3_2.java>`_
+        
+    #. 모든 정점 경유 최단 거리
+        - `순열 생성 + 가지치기 <https://github.com/algocoding/lecture/blob/master/backtrack/src/Day3_3perm.java>`_
+        - `순열 생성 + 인접 행렬 <https://github.com/algocoding/lecture/blob/master/backtrack/src/Day3_3perm2.java>`_
+        - `BIT 표현을 이용한 DP <https://github.com/algocoding/lecture/blob/master/backtrack/src/Day3_3DP.java>`_
+        
+추가 연습 문제 
+========================================
+
 
     #. `일곱 난쟁이 <https://www.acmicpc.net/problem/2309>`_    
         - 부분 집합
-        - `JAVA 예제(부분집합) <https://github.com/algocoding/lecture/blob/master/backtrack/src/BOJ2309_subset.java>`_ || `JAVA 예제(조합) <https://github.com/algocoding/lecture/blob/master/backtrack/src/BOJ2309_comb.java>`_ 
             
     #. `로또 <https://www.acmicpc.net/problem/6603>`_ 
         - 조합        
-        - `JAVA 예제(반복) <https://github.com/algocoding/lecture/blob/master/backtrack/src/BOJ6603.java>`_ || `JAVA 예제(재귀) <https://github.com/algocoding/lecture/blob/master/backtrack/src/BOJ6603_recur.java>`_
     
     #. `n-Queen <https://www.acmicpc.net/problem/9663>`_        
         - 순열 + 가지치기
-        - `JAVA 예제 <https://github.com/algocoding/lecture/blob/master/backtrack/src/BOJ9663.java>`_
         
     #. `알파벳 <https://www.acmicpc.net/problem/1987>`_ 
         - DFS(탐색할 수 없어서 되돌아가는 경로의 방문 정보를 지운다).
-        - `JAVA 예제 <https://github.com/algocoding/lecture/blob/master/backtrack/src/BOJ1987.java>`_
         
     #. `나이트의 이동 <https://www.acmicpc.net/problem/7562>`_  
         - BFS(최단 경로)
-        - `JAVA 예제 <https://github.com/algocoding/lecture/blob/master/backtrack/src/BOJ7562.java>`_
         
     #. `외판원 순회2 <https://www.acmicpc.net/problem/10971>`_    
         - 순열(현재까지 발견한 가장 좋은 해에 기반해서 가지치기)
-        - `JAVA 예제 <https://github.com/algocoding/lecture/blob/master/backtrack/src/BOJ10971.java>`_
         
 ..
     .. disqus::
