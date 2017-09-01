@@ -30,16 +30,11 @@
 ========================================
 
     #. 병원 짓기
-        - `바이너리 카운팅 <https://github.com/algocoding/lecture/blob/master/backtrack/src/Day3_1BinCnting.java>`_
-        - `재귀 호출 <https://github.com/algocoding/lecture/blob/master/backtrack/src/Day3_1Backtrack.java>`_
-    
+       
     #. 방 배정
-        - `중복 순열(재귀) <https://github.com/algocoding/lecture/blob/master/backtrack/src/Day3_2.java>`_
         
     #. 모든 정점 경유 최단 거리
-        - `순열 생성 + 가지치기 <https://github.com/algocoding/lecture/blob/master/backtrack/src/Day3_3perm.java>`_
-        - `순열 생성 + 인접 행렬 <https://github.com/algocoding/lecture/blob/master/backtrack/src/Day3_3perm2.java>`_
-        - `BIT 표현을 이용한 DP <https://github.com/algocoding/lecture/blob/master/backtrack/src/Day3_3DP.java>`_
+        
         
 추가 연습 문제 
 ========================================
