@@ -17,7 +17,7 @@
         - 조합의 재귀적 정의로 생성
         - 요소를 순차적으로 선택하면서 생성
         
-    #. `동전 거스름돈 <https://github.com/algocoding/lecture/blob/master/backtrack/src/CoinchangeDemo.java>`_
+    #. `동전 거스름돈 <https://github.com/algocoding/lecture/blob/master/backtrack/src/CoinChangeDemo.java>`_
     
     #. `배낭 문제 <https://github.com/algocoding/lecture/blob/master/backtrack/src/KnapsackDemo.java>`_
         - 부분 집합을 생성하는 방법으로 탐색하기
