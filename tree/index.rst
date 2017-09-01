@@ -15,7 +15,7 @@
     
     #. `힙(Heap) <https://github.com/algocoding/lecture/blob/master/tree/src/Heap.java>`_        
 
-    #. `인덱스 트리(Index Tree) <https://github.com/algocoding/lecture/blob/master/tree/src/indexTree.java>`_        
+    #. `인덱스 트리(Index Tree) <https://github.com/algocoding/lecture/blob/master/tree/src/IndexTree.java>`_        
     
     #. `구간 트리(Segement Tree) <https://github.com/algocoding/lecture/blob/master/tree/src/SegmentTree.java>`_        
 
