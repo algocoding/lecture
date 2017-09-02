@@ -14,11 +14,15 @@
         
     #. `아호-코라식 <https://github.com/algocoding/lecture/blob/master/string/src/AhoCorasik.java>`_
 
-연습문제 
-==========================
+    
+추가 문제
+-------------------
 
-    #. `찾기 <https://www.acmicpc.net/problem/1786>`_ 
-        - KMP
+    .. toctree::   
+       :maxdepth: 1  
+       :titlesonly:   
+       
+       practice        
  
 ..
     .. disqus::
