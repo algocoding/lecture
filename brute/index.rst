@@ -19,3 +19,12 @@
     
     #. 숫자 교환
         
+
+추가 문제
+-------------------
+
+    .. toctree::   
+       :maxdepth: 1  
+       :titlesonly:   
+       
+       practice        
