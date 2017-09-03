@@ -1,4 +1,4 @@
-﻿
+﻿========================================
 99. 자료구조 라이브러리
 ========================================
 
@@ -10,6 +10,7 @@
     #. `Comparable <https://github.com/algocoding/lecture/blob/master/etc/src/SortComparableDemo.java>`_
     #. `binary Search <https://github.com/algocoding/lecture/blob/master/etc/src/BinarySearchDemo.java>`_
 
+--------
 
 자료 구조    
 =======================================
@@ -23,6 +24,7 @@
     #. `Prioirty Queue <https://github.com/algocoding/lecture/blob/master/etc/src/PQDemo.java>`_
     #. `HashMap <https://github.com/algocoding/lecture/blob/master/etc/src/HashMapDemo.java>`_
 
+------
     
 연습 문제
 -------------------
