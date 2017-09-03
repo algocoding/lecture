@@ -1,4 +1,4 @@
-import java.util.*;
+ï»¿import java.util.*;
 
 public class VectorDemo {
 	public static void main(String args[]) 
@@ -7,8 +7,8 @@ public class VectorDemo {
 		
 		Vector<Integer> v = new Vector<Integer>();
 		
-		// StackÀ¸·Î »ç¿ë
-		for(int val: arr)
+		// Stackìœ¼ë¡œ ì‚¬ìš©
+		for(int val: arr) 
 			v.add(val);
 		
 		while(!v.isEmpty())
@@ -17,7 +17,7 @@ public class VectorDemo {
 			v.remove(v.size() - 1);
 		}
 		
-		// Queue·Î »ç¿ë
+		// Queueë¡œ ì‚¬ìš©
 		for(int val: arr)
 			v.add(val);
 		
