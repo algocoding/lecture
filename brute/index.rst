@@ -11,6 +11,8 @@
     #. `정렬 <https://github.com/algocoding/lecture/blob/master/brute/src/SortingDemo.java>`_
         - 거품, 선택, 삽입, 퀵, 병합, 카운팅
     #. `Baby_gin <https://github.com/algocoding/lecture/blob/master/brute/src/BabyGinDemo.java>`_
+
+----------
     
 연습 문제 
 ============================
