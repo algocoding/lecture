@@ -1,4 +1,4 @@
-/*ÀÔ·Â
+/* ìž…ë ¥
 5
 0 4 2 5 0
 0 0 1 0 4
@@ -20,7 +20,7 @@ public class FloydWarshallDemo {
 		N = sc.nextInt();
 		D = new int[N + 1][N + 1];
 		
-		for(int i = 1; i <= N; i++)	// 1¹ø ~ N¹ø Á¤Á¡
+		for(int i = 1; i <= N; i++)	// 1ë²ˆ ~ Në²ˆ ì •ì 
 		for(int j = 1; j <= N; j++)
 		{
 			D[i][j] = sc.nextInt();
