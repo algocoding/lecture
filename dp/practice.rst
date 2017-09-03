@@ -10,7 +10,9 @@
         
     #. `2xN 타일링 <https://www.acmicpc.net/problem/11726>`_ 
         - 모듈러 합동    
-        
+     
+    #. `RGB 거리 <https://www.acmicpc.net/problem/1149>`_
+    
     #. `동전2 <https://www.acmicpc.net/problem/2294>`_                  
     
         
