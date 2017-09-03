@@ -6,13 +6,6 @@
 목록
 ========================================
 
-
-    #. `일곱 난쟁이 <https://www.acmicpc.net/problem/2309>`_    
-        - 부분 집합
-            
-    #. `로또 <https://www.acmicpc.net/problem/6603>`_ 
-        - 조합        
-    
     #. `n-Queen <https://www.acmicpc.net/problem/9663>`_        
         - 순열 + 가지치기
         
