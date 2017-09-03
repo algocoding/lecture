@@ -1,4 +1,4 @@
-import java.util.*;
+ï»¿import java.util.*;
 
 public class LinkedListDemo {
 	
@@ -15,6 +15,6 @@ public class LinkedListDemo {
 		
 		System.out.println(list);
 		
-		System.out.println(list.subList(1, 4)); // [1, 4) --> [1, 3] ±¸°£
+		System.out.println(list.subList(1, 4)); // [1, 4) --> [1, 3] 
 	}
 }
