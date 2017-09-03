@@ -25,7 +25,7 @@
         - 부분 집합 생성
         - 재귀적 정의
         
-    #. `N-Queen 문제 <https://github.com/algocoding/lecture/blob/master/backtrack/src/nQueeonDemo.java>`_
+    #. `N-Queen 문제 <https://github.com/algocoding/lecture/blob/master/backtrack/src/nQueenDemo.java>`_
         - 순열 생성 + 가지 치기
 
 ----------
