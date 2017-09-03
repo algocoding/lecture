@@ -22,7 +22,7 @@
     #. `최단 경로  <https://www.acmicpc.net/problem/1753>`_ 
         - DFS, BFS, Dijkstra
     
-
+    #. `친구 네트워크 <https://www.acmicpc.net/problem/4195>`_ 
  
 ..
     .. disqus::
