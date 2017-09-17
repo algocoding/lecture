@@ -24,7 +24,7 @@ public class TSPDPDemo {
 		int T = sc.nextInt();
 		while(T-- > 0)
 		{
-			// ½ÃÀÛÁ¡°ú µµÂøÁ¡
+			// ì‹œì‘ì ê³¼ ë„ì°©ì 
 			x[0] = sc.nextInt(); y[0] = sc.nextInt();
 			x[12] = sc.nextInt(); y[12] = sc.nextInt();
 			
@@ -42,17 +42,17 @@ public class TSPDPDemo {
 			
 			dp[1][0] = 0;
 			
-			for (int visit = 1; visit < (1 << n); visit++) // visit: ¹æ¹®ÇÑ Á¤Á¡µéÀÇ ÁıÇÕ
+			for (int visit = 1; visit < (1 << n); visit++) // visit: ë°©ë¬¸í•œ ì •ì ë“¤ì˜ ì§‘í•©
 			{
-				for (int last = 0; last < n; last++)		// last: ¸¶Áö¸· ¹æ¹® Á¤Á¡
+				for (int last = 0; last < n; last++)		// last: ë§ˆì§€ë§‰ ë°©ë¬¸ ì •ì 
 				{
-					if ((visit & (1 << last)) == 0) continue; // 1¹ø ¹æ¹®ÇÏÁö ¾ÊÀº °æ¿ì Á¦¿Ü
+					if ((visit & (1 << last)) == 0) continue; // lastê°€ visitì— í¬í•¨ë˜ì—ˆëŠ”ì§€ í™•ì¸
 					
-					int prev = visit - (1 << last); 		 // ¸¶Áö¸· ¹æ¹® Á¤Á¡À» Á¦¿Ü
+					int prev = visit - (1 << last); 		 // prev: visitì—ì„œ lastë¥¼ ì œì™¸í•œ ì •ì ë“¤ 
 					
-					for (int v = 0; v < n; v++)				 // prev ÁıÇÕÀÇ ¸¶Áö¸· ¹æ¹® Á¤Á¡µé¿¡ ´ëÇØ
+					for (int v = 0; v < n; v++)				 // prevì— í¬í•¨ëœ ì •ì  ì„ íƒí•˜ê¸°
 					{
-						if (G[v][last]==0 || (prev & (1 << v)) == 0) // °£¼±ÀÌ ¾ø°Å³ª, ºñ¹æ¹® Á¤Á¡ Á¦¿Ü 
+						if ((prev & (1 << v)) == 0 || G[v][last]== 0) // v->last ê°„ì„ ì´ ì—†ê±°ë‚˜, visitì— ë¯¸í¬í•¨ì´ë©´ ì œì™¸
 							continue;
 						
 						dp[visit][last] = Math.min(dp[visit][last], dp[prev][v] + G[v][last]);
