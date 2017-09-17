@@ -40,15 +40,3 @@
     #. 모든 정점 경유 최단 거리
         
 
-추가 문제
------------------
-
-.. toctree::   
-   :maxdepth: 1  
-   :titlesonly:   
-   
-   practice
-        
-..
-    .. disqus::
-        :disqus_identifier: master_page

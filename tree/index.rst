@@ -26,16 +26,3 @@
     
     #. 공통조상, 서브 트리의 높이와 너비
 
-    
-추가 문제
--------------------
-
-    .. toctree::   
-       :maxdepth: 1  
-       :titlesonly:   
-       
-       practice        
-        
-..
-    .. disqus::
-        :disqus_identifier: master_page
