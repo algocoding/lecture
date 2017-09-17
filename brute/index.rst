@@ -12,6 +12,13 @@
         - 거품, 선택, 삽입, 퀵, 병합, 카운팅
     #. `Baby_gin <https://github.com/algocoding/lecture/blob/master/brute/src/BabyGinDemo.java>`_
 
+    #. 3개의 요소들의 순열 생성
+        - for문 중첩
+        - 재귀 호출 + 요소들 나열
+        - 재귀 호출 + 요소들의 인덱스 나열
+    
+    #. 
+    
 ----------
     
 연습 문제 
