@@ -18,10 +18,9 @@ public class MergeArr {
 			if(arr[i] < arr[j]) sorted[k++] = arr[i++];
 			else sorted[k++] = arr[j++];
 		}
-		if(i <= mid) 
-			while(i <= mid) sorted[k++] = arr[i++];
-		else
-			while(j <= r) sorted[k++] = arr[j++];
+		
+		while(i <= mid) sorted[k++] = arr[i++];
+		while(j <= r) sorted[k++] = arr[j++];
 		
 		for(int idx = l; idx <= r; idx++)
 			arr[idx] = sorted[idx];
