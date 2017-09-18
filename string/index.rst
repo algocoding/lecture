@@ -15,3 +15,13 @@
     #. `아호-코라식 <https://github.com/algocoding/lecture/blob/master/string/src/AhoCorasik.java>`_
 
 ----------
+
+
+추가
+========================================
+
+.. toctree::   
+   :maxdepth: 1  
+   :titlesonly:   
+   
+   practice
