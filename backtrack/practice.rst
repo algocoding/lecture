@@ -18,6 +18,8 @@
     #. `외판원 순회2 <https://www.acmicpc.net/problem/10971>`_    
         - 순열(현재까지 발견한 가장 좋은 해에 기반해서 가지치기)
         
+    #. `교환 <https://www.acmicpc.net/problem/1039>`_     
+    
 ..
     .. disqus::
         :disqus_identifier: master_page
