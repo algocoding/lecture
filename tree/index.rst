@@ -13,7 +13,7 @@
         
     #. `이진 탐색 트리 <https://github.com/algocoding/lecture/blob/master/tree/src/BST.java>`_ 
     
-    #. `힙(Heap) <https://github.com/algocoding/lecture/blob/master/tree/src/Heap.java>`_        
+    #. `힙(Binary Heap) <https://github.com/algocoding/lecture/blob/master/tree/src/Heap.java>`_        
 
     #. `인덱스 트리(Index Tree) <https://github.com/algocoding/lecture/blob/master/tree/src/IndexTreeDemo.java>`_        
     
