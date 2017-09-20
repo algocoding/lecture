@@ -20,9 +20,9 @@
         
         
     #. `조합 생성 <https://github.com/algocoding/lecture/blob/master/backtrack/src/CombinationDemo.java>`_
-        - `재귀적 정의로 생성 <https://github.com/algocoding/lecture/blob/master/backtrack/src/Comb1.java>`_
-        - `요소를 순차적으로 선택하면서 생성 <https://github.com/algocoding/lecture/blob/master/backtrack/src/Comb2.java>`_
-        - `중복 조합 <https://github.com/algocoding/lecture/blob/master/backtrack/src/Comb3.java>`_
+        - `재귀적 정의로 생성 <https://github.com/algocoding/lecture/blob/master/backtrack/src/comb1.java>`_
+        - `요소를 순차적으로 선택하면서 생성 <https://github.com/algocoding/lecture/blob/master/backtrack/src/comb2.java>`_
+        - `중복 조합 <https://github.com/algocoding/lecture/blob/master/backtrack/src/comb3.java>`_
         
     #. `동전 교환 <https://github.com/algocoding/lecture/blob/master/backtrack/src/CoinChangeDemo.java>`_
     
