@@ -21,6 +21,10 @@
         
     #. `싸이클 판정 <https://github.com/algocoding/lecture/blob/master/graph/src/Cycle.java>`_
 
+    #. `친구 네트워크 <https://www.acmicpc.net/problem/4195>`_ 
+        - Disjoin-Set 사용
+        - 입력으로 주어지는 이름 문자열을 정수 값을 부여, HashMap을 사용해서 문제를 해결할 수 있다.
+        
 ----------
     
 연습 문제
