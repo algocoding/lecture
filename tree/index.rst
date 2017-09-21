@@ -17,8 +17,12 @@
 
     #. `인덱스 트리(Index Tree) <https://github.com/algocoding/lecture/blob/master/tree/src/IndexTreeDemo.java>`_        
     
-    #. `구간 트리(Segement Tree) <https://github.com/algocoding/lecture/blob/master/tree/src/SegmentTree.java>`_        
-
+    #. 구간 트리(Segement Tree)         
+        #. `구간 나누기 <https://github.com/algocoding/lecture/blob/master/tree/src/SegmentTree0.java>`_
+        #. `구간합 트리 생성/쿼리 <https://github.com/algocoding/lecture/blob/master/tree/src/SegmentTree1.java>`_
+        #. `단일 값 갱신하기 <https://github.com/algocoding/lecture/blob/master/tree/src/SegmentTree2.java>`_
+        #. `구간 갱신 <https://github.com/algocoding/lecture/blob/master/tree/src/SegmentTree.java>`_
+        
 ----------
 
 연습 문제

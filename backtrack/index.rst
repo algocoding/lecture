@@ -9,15 +9,12 @@
         - `바이너리 카운팅 <https://github.com/algocoding/lecture/blob/master/backtrack/src/SubsetBincntDemo.java>`_
         - `DFS <https://github.com/algocoding/lecture/blob/master/backtrack/src/SubsetDemo.java>`_         
         - `BFS <https://github.com/algocoding/lecture/blob/master/backtrack/src/SubsetBFSDemo.java>`_        
-        
-        
+             
     #. 순열 생성 
         - `이미 선택한 요소들을 체크해서 순열 생성 <https://github.com/algocoding/lecture/blob/master/backtrack/src/Perm1.java>`_ 
         - `1부터 시작하는 순열 생성 <https://github.com/algocoding/lecture/blob/master/backtrack/src/Perm2.java>`_
         - `교환을 통한 생성 <https://github.com/algocoding/lecture/blob/master/backtrack/src/Perm3.java>`_
         - `중복 순열 생성 <https://github.com/algocoding/lecture/blob/master/backtrack/src/Perm4.java>`_
-        
-        
         
     #. `조합 생성 <https://github.com/algocoding/lecture/blob/master/backtrack/src/CombinationDemo.java>`_
         - `재귀적 정의로 생성 <https://github.com/algocoding/lecture/blob/master/backtrack/src/comb1.java>`_
