@@ -2,7 +2,7 @@
 01. 완전 탐색
 ========================================
 
-예제 코드
+탐색, 정렬
 ============================
 
     #. `이진 탐색 <https://github.com/algocoding/lecture/blob/master/brute/src/BinarySearchDemo.java>`_
@@ -13,7 +13,14 @@
         - `병합 정렬(배열) <https://github.com/algocoding/lecture/blob/master/brute/src/MergeArr.java>`_
         - `퀵정렬(Hoare partition) <https://github.com/algocoding/lecture/blob/master/brute/src/QuickHoare.java>`_
         - `퀵정렬(Lomuto partition) <https://github.com/algocoding/lecture/blob/master/brute/src/QuickLomuto.java>`_
-        
+    
+완전 탐색
+===================
+
+    #. 간단한 중첩 for와 재귀 호출 이해
+        - `중첩된 for <https://github.com/algocoding/lecture/blob/master/brute/src/Iter1.java>`_
+        - `재귀 <https://github.com/algocoding/lecture/blob/master/brute/src/Recur1.java>`_
+                
     #. `Baby_gin <https://github.com/algocoding/lecture/blob/master/brute/src/BabyGinDemo.java>`_
         - for문 중첩해서 순열/조합 생성해서 해결
         - 카운팅을 이용해서 해결
